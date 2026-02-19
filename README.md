@@ -2,11 +2,17 @@
     <img title="GPhubLogo" alt="GPhub" src="https://res.cloudinary.com/dkytv4nwx/image/upload/v1710786255/GPhubLogo_nn1pyz.svg" width="300">
 </p>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e2d77aae-644c-46c7-842e-01e858e12506/deploy-status)](https://app.netlify.com/projects/gphub-dev/deploys)
-[![version](https://img.shields.io/badge/version-v1.0,0-brightgreen)](https://github.com/alefaraci/Kriging-Table-HTML/releases/tag/devs)
-[![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/alefaraci/Kriging-Table-HTML/blob/main/LICENSE)
-
-![GPhub](https://res.cloudinary.com/dkytv4nwx/image/upload/v1709317441/Screenshot_2024-03-01_alle_19.12.28_tjgara.png)
+<p align="center">
+    <a href="https://github.com/alefaraci/GPhub/releases">
+      <img src="https://img.shields.io/github/v/release/alefaraci/GoSNare?label=version&color=brightgreen" alt="Latest Release">
+    </a>
+    <a href="https://app.netlify.com/projects/gphub-dev/deploys">
+      <img src="https://img.shields.io/badge/language-Go-00ADD8?logo=go](https://api.netlify.com/api/v1/badges/e2d77aae-644c-46c7-842e-01e858e12506/deploy-status" alt="Netlify Status">
+    </a>
+    <a href="https://github.com/alefaraci/GPhub/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/alefaraci/GPhub?color=brightgreen" alt="License">
+    </a>
+</p>    
 
 [`GPhub`](https://gp-hub.dev/) offers an interactive guide to Gaussian Process (GP) libraries. This project is built using [`Hugo Framework`](https://gohugo.io/), `GO Template`, `HTML`, `CSS`, and `JS`. The guide features a comprehensive dynamic table to provide an easy-to-use and intuitive reference for exploring the GP libraries available to the data science community. Whether new to GP or experienced in the field, the table simplifies the process of selecting the ideal GP tool that best suits one's needs.
 
