@@ -3,12 +3,7 @@
 </p>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e2d77aae-644c-46c7-842e-01e858e12506/deploy-status)](https://app.netlify.com/projects/gphub-dev/deploys)
-[![build](https://img.shields.io/badge/build-passing-brightgreen)](https://img.shields.io/badge/build-passing-brightgreen)
-[![version](https://img.shields.io/badge/version-v0.0.dev-brightgreen)](https://github.com/alefaraci/Kriging-Table-HTML/releases/tag/devs)
-[![language](https://img.shields.io/badge/language-GO-blue)](https://go.dev)
-[![language](https://img.shields.io/badge/language-html-orange)](https://html.spec.whatwg.org)
-[![language](https://img.shields.io/badge/language-CSS-green)](https://www.w3.org/TR/CSS/)
-[![language](https://img.shields.io/badge/language-JS-yellow)](developer.mozilla.org/it/docs/Web/JavaScript)
+[![version](https://img.shields.io/badge/version-v1.0,0-brightgreen)](https://github.com/alefaraci/Kriging-Table-HTML/releases/tag/devs)
 [![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/alefaraci/Kriging-Table-HTML/blob/main/LICENSE)
 
 ![GPhub](https://res.cloudinary.com/dkytv4nwx/image/upload/v1709317441/Screenshot_2024-03-01_alle_19.12.28_tjgara.png)
