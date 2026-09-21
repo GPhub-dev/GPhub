@@ -1,4 +1,5 @@
 [build]
+  base = "gphub"
   command = "hugo --gc --minify"
   publish = "public"
 
