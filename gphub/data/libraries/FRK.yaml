@@ -1,0 +1,123 @@
+PackageID: FRK
+Library:
+  - Name: FRK
+    URL: https://andrewzm.github.io/FRK/
+    Reference:
+      - Author: Zammit-Mangion et al. (2021)
+        URL: https://www.jstatsoft.org/article/view/v098i04
+Language:
+  - R
+License:
+  - Name: GPL-2.0
+    URL: https://cran.r-project.org/web/licenses/GPL-2
+Repository:
+  - Name: andrewzm/FRK
+    URL: https://github.com/andrewzm/FRK
+Version:
+  - Name: 2.2.3
+    URL: https://github.com/andrewzm/FRK/releases/tag/2.2.3
+Installation:
+  - CRAN
+Developer:
+  - Tag: blue
+    Name: University of Wollongong
+    URL: https://www.uow.edu.au
+Docs:
+  - Name: docs
+    URL: https://andrewzm.github.io/FRK/
+  - Name: r docs
+    URL: https://cran.r-project.org/web/packages/FRK/FRK.pdf
+  - Name: tutorials
+    URL: https://cran.r-project.org/web/packages/FRK/vignettes/FRK_intro.pdf
+  - Name: API
+    URL: https://andrewzm.github.io/FRK/reference/index.html
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: default
+        Name: Fixed Rank Kriging (FRK)
+      - Tag: default
+        Name: Spatial Random Effects (SRE) model
+      - Tag: default
+        Name: Spatio-Temporal Kriging
+      - Tag: default
+        Name: Generalised Linear Mixed Model (GLMM)
+    URL: https://andrewzm.github.io/FRK/reference/SRE.html
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: default
+        Name: Custom
+    URL: https://andrewzm.github.io/FRK/reference/SRE.html
+LengthScale:
+  - Isotropic
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: default
+        Name: Bisquare
+      - Tag: blue
+        Name: Gaussian
+      - Tag: teal
+        Name: Exponential
+      - Tag: yellow
+        Name: Matern32
+    URL: https://andrewzm.github.io/FRK/reference/auto_basis.html
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+      - Tag: green
+        Name: Poisson
+      - Tag: default
+        Name: Binomial
+      - Tag: yellow
+        Name: Gamma
+      - Tag: default
+        Name: Negative Binomial
+      - Tag: default
+        Name: Inverse-Gaussian
+    URL: https://andrewzm.github.io/FRK/reference/SRE.html
+    Nugget:
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: default
+        Name: Expectation Maximisation (EM)
+      - Tag: purple
+        Name: Laplace Approximation (LA)
+    URL: https://andrewzm.github.io/FRK/reference/SRE.html
+OptimizationMethods:
+  - Types:
+      - Tag: default
+        Name: nlminb
+    URL: https://andrewzm.github.io/FRK/reference/SRE.html
+Resampling: false
+Metrics:
+  - null

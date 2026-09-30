@@ -15,11 +15,10 @@ Repository:
   - Name: hnickisch/gpml-matlab
     URL: https://gitlab.com/hnickisch/gpml-matlab
 Version:
-  - Name: v4.2
+  - Name: v4.2+dev2
     URL: https://gitlab.com/hnickisch/gpml-matlab/-/releases/v4.2+dev2
 Installation:
   - matlab
-  - sturtup
 Developer:
   - Tag: yellow
     Name: University of Cambridge
@@ -50,15 +49,15 @@ Complexity:
   - O(NM^2)
 Trend:
   - Types:
-      - Tag: default
+      - Tag: blue
         Name: Zero
       - Tag: default
         Name: One
-      - Tag: default
+      - Tag: orange
         Name: Constant
-      - Tag: default
+      - Tag: green
         Name: Linear
-      - Tag: default
+      - Tag: teal
         Name: Polynomial
       - Tag: default
         Name: Discrete
@@ -72,7 +71,7 @@ Trend:
         Name: Weighted sum of projected cosines
       - Tag: default
         Name: Scaled
-      - Tag: default
+      - Tag: red
         Name: Sum
       - Tag: default
         Name: Product
@@ -90,60 +89,68 @@ LengthScale:
   - Anisotropic
 Correlation:
   - Types:
-      - Tag: default
+      - Tag: orange
         Name: Constant
       - Tag: default
-        Name: LinearWhite noise
-      - Tag: default
-        Name: Picewise Polynomial
-      - Tag: default
+        Name: White noise
+      - Tag: teal
+        Name: Piecewise Polynomial
+      - Tag: yellow
         Name: Matern12
-      - Tag: default
+      - Tag: yellow
         Name: Matern32
-      - Tag: default
+      - Tag: yellow
         Name: Matern52
-      - Tag: default
+      - Tag: red
         Name: Rational Quadratic
-      - Tag: default
+      - Tag: blue
         Name: Squared Exponential
+      - Tag: green
+        Name: Linear
     URL: http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf
 Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+      - Tag: teal
+        Name: Scale
+      - Tag: default
+        Name: Mask
+    URL: http://gaussianprocess.org/gpml/code/matlab/doc/manual.pdf
 Likelihood:
   - Types:
-      - Tag: null
-        Name: Erf (Probit)
-      - Tag: null
-        Name: Logistic (Logit)
-      - Tag: null
+      - Tag: default
+        Name: Probit
+      - Tag: default
+        Name: Logit
+      - Tag: default
         Name: Uniform
-      - Tag: null
+      - Tag: blue
         Name: Gaussian
-      - Tag: null
+      - Tag: default
         Name: Gumbel
-      - Tag: null
+      - Tag: purple
         Name: Laplace
-      - Tag: null
-        Name: Search-square
-      - Tag: null
+      - Tag: default
+        Name: Sech-square
+      - Tag: teal
         Name: Student-T
-      - Tag: null
+      - Tag: green
         Name: Poisson
-      - Tag: null
+      - Tag: default
         Name: Negative Binomial
-      - Tag: null
+      - Tag: yellow
         Name: Gamma
-      - Tag: null
+      - Tag: teal
         Name: Exponential
-      - Tag: null
+      - Tag: default
         Name: Log Gaussian
-      - Tag: null
+      - Tag: yellow
         Name: Beta
-      - Tag: null
+      - Tag: default
         Name: Mixture
     URL: null
     Nugget:
@@ -154,19 +161,19 @@ Likelihood:
         Name: null
 EstimationMethods:
   - Types:
-      - Tag: null
+      - Tag: default
         Name: Exact inference
-      - Tag: null
+      - Tag: purple
         Name: Laplace Approximation (LA)
-      - Tag: null
+      - Tag: default
         Name: Expectation Propagation (EP)
-      - Tag: null
+      - Tag: teal
         Name: Variational Bayes Approximation (VB)
-      - Tag: null
+      - Tag: default
         Name: Kullback-Leibler Approximation (KL)
-      - Tag: null
+      - Tag: default
         Name: Markov Chain Monte Carlo (MCMC)
-      - Tag: null
+      - Tag: green
         Name: Leave-One-Out Cross-Validation (LOOCV)
     URL: null
 OptimizationMethods:

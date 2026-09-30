@@ -4,13 +4,11 @@
     <head>
         <script defer src="https://cloud.umami.is/script.js" data-website-id="b92a4959-8d4f-42e9-b248-4db9909445e2"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script
             id="MathJax-script"
             async
-            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+            src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"
         ></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <title>{{.Title}}</title>
         <link rel="stylesheet" href="/style.css" />
         <style>
@@ -72,10 +70,10 @@
 
                     for (var i = 2; i < tableRows.length; i++) {
                         if (!isFilterActive && filter !== "") {
-                            var cellText =
-                                tableRows[i].cells[1].textContent.toLowerCase();
-                            var shouldDisplay =
-                                cellText.indexOf(filter.toLowerCase()) > -1;
+                            var langs = (
+                                tableRows[i].cells[1].getAttribute("data-langs") || ""
+                            ).split("|");
+                            var shouldDisplay = langs.indexOf(filter) > -1;
                             tableRows[i].style.display = shouldDisplay
                                 ? ""
                                 : "none";
@@ -92,7 +90,7 @@
                 document
                     .getElementById("filterC")
                     .addEventListener("click", function () {
-                        filterTableLanguage("C ");
+                        filterTableLanguage("C");
                     });
 
                 document
@@ -104,7 +102,7 @@
                 document
                     .getElementById("filterGo")
                     .addEventListener("click", function () {
-                        filterTableLanguage("Go");
+                        filterTableLanguage("GO");
                     });
 
                 document
@@ -134,7 +132,7 @@
                 document
                     .getElementById("filterR")
                     .addEventListener("click", function () {
-                        filterTableLanguage("R ");
+                        filterTableLanguage("R");
                     });
 
                 document

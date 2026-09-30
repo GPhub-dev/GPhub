@@ -43,6 +43,18 @@
             NumPyro
         </a>
     </span>
+    {{else if eq . "Optim.jl"}}
+    <span class="selected-value select-value-color-blue">
+        <a href="https://julianlsolvers.github.io/Optim.jl/stable/" title="https://julianlsolvers.github.io/Optim.jl/stable/" style="text-decoration: none">
+            Optim.jl
+        </a>
+    </span>
+    {{else if eq . "Distributions.jl"}}
+    <span class="selected-value select-value-color-blue">
+        <a href="https://juliastats.org/Distributions.jl/stable/" title="https://juliastats.org/Distributions.jl/stable/" style="text-decoration: none">
+            Distributions.jl
+        </a>
+    </span>
     {{else}}
     <span class="selected-value select-value-color-default">
         {{.}}

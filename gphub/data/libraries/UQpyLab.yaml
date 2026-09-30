@@ -14,8 +14,8 @@ Repository:
   - Name: null
     URL: null
 Version:
-  - Name: v1.0.0
-    URL: https://uqpylab.uq-cloud.io/#beta-testing-application
+  - Name: v1.0.2
+    URL: https://pypi.org/project/uqpylab/1.0.2/
 Installation:
   - PyPI
 Developer:

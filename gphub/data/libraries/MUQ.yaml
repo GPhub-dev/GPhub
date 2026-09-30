@@ -15,8 +15,8 @@ Repository:
   - Name: mituq/muq2
     URL: https://bitbucket.org/mituq/muq2
 Version:
-  - Name: v0.4.3
-    URL: https://mituq.bitbucket.io/source/_site/latest/index.html
+  - Name: v0.4.5
+    URL: https://bitbucket.org/mituq/muq2/commits/tag/v0.4.5
 Installation:
   - null
 Developer:
@@ -29,7 +29,7 @@ Developer:
   - Tag: purple
     Name: New York University
     URL: https://www.nyu.edu
-  - Tag: re
+  - Tag: red
     Name: Heidelberg University
     URL: https://www.uni-heidelberg.de
   - Tag: blue

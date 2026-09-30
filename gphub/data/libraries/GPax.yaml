@@ -1,0 +1,147 @@
+PackageID: GPax
+Library:
+  - Name: GPax
+    URL: https://gpax.readthedocs.io/en/latest/
+    Reference:
+      - Author: Ziatdinov et al. (2021)
+        URL: https://arxiv.org/abs/2108.10280
+Language:
+  - Python
+License:
+  - Name: MIT
+    URL: https://github.com/ziatdinovmax/gpax/blob/main/LICENSE
+Repository:
+  - Name: ziatdinovmax/gpax
+    URL: https://github.com/ziatdinovmax/gpax
+Version:
+  - Name: 0.1.8
+    URL: https://github.com/ziatdinovmax/gpax/releases/tag/0.1.8
+Installation:
+  - PyPI
+Developer:
+  - Tag: teal
+    Name: Oak Ridge National Laboratory
+    URL: https://www.ornl.gov
+  - Tag: default
+    Name: GPax contributors
+    URL: https://github.com/ziatdinovmax/gpax/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://gpax.readthedocs.io/en/latest/
+  - Name: tutorials
+    URL: https://gpax.readthedocs.io/en/latest/USAGE.html
+  - Name: API
+    URL: https://gpax.readthedocs.io/en/latest/models.html
+  - Name: colab notebooks
+    URL: https://gpax.readthedocs.io/en/latest/examples.html
+  - Name: jupyter notebooks
+    URL: https://github.com/ziatdinovmax/gpax/tree/main/examples
+Support:
+  - Name: GitHub discussions
+    URL: https://github.com/ziatdinovmax/gpax/discussions
+Framework:
+  - JAX
+  - NumPyro
+GPU: true
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: default
+        Name: Structured Gaussian Process (sGP)
+      - Tag: default
+        Name: GP with Uncertain Inputs (UIGP)
+      - Tag: default
+        Name: Heteroskedastic GP (VarNoiseGP)
+      - Tag: default
+        Name: Measured-Noise GP
+      - Tag: default
+        Name: Vector-valued GP (vExactGP)
+      - Tag: teal
+        Name: Variational Gaussian Process (VGP)
+      - Tag: green
+        Name: Sparse Variational Gaussian Process (SVGP)
+      - Tag: default
+        Name: Deep Kernel Learning (DKL)
+      - Tag: default
+        Name: Variational Deep Kernel Learning (viDKL)
+      - Tag: default
+        Name: Infinite-width Bayesian Neural Network (iBNN)
+      - Tag: red
+        Name: Multi-output Gaussian Process (MOGP)
+      - Tag: default
+        Name: Multi-task Deep Kernel Learning (viMTDKL)
+      - Tag: default
+        Name: Structured Probabilistic Model (sPM)
+    URL: https://gpax.readthedocs.io/en/latest/models.html
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: blue
+        Name: Zero
+      - Tag: default
+        Name: Custom
+    URL: https://gpax.readthedocs.io/en/latest/models.html
+LengthScale:
+  - Isotropic
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: yellow
+        Name: Matern52
+      - Tag: green
+        Name: Periodic
+      - Tag: default
+        Name: NNGP
+      - Tag: default
+        Name: Multitask
+      - Tag: default
+        Name: LCMK
+      - Tag: default
+        Name: Custom
+    URL: https://gpax.readthedocs.io/en/latest/kernels.html
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+      - Tag: default
+        Name: Heteroskedastic Noise
+    URL: https://gpax.readthedocs.io/en/latest/models.html
+    Nugget:
+      - Tag: default
+        Name: Custom
+      - Tag: blue
+        Name: "default value: 1e-6"
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: default
+        Name: Markov Chain Monte Carlo (MCMC)
+      - Tag: default
+        Name: Hamiltonian Monte Carlo (HMC)
+      - Tag: teal
+        Name: Stochastic Variational Inference (SVI)
+      - Tag: red
+        Name: Evidence Lower Bound (ELBO)
+      - Tag: default
+        Name: Maximum A Posteriori (MAP)
+    URL: https://gpax.readthedocs.io/en/latest/models.html
+OptimizationMethods:
+  - Types:
+      - Tag: orange
+        Name: Adam
+    URL: https://gpax.readthedocs.io/en/latest/models.html
+Resampling: false
+Metrics:
+  - null

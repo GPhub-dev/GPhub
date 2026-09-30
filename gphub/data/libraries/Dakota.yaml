@@ -1,0 +1,116 @@
+PackageID: Dakota
+Library:
+  - Name: Dakota
+    URL: https://dakota.sandia.gov/
+    Reference:
+      - Author: Adams et al. (2026)
+        URL: https://snl-dakota.github.io/
+Language:
+  - C++
+  - Python
+License:
+  - Name: LGPL
+    URL: https://github.com/snl-dakota/dakota/blob/devel/LICENSE
+Repository:
+  - Name: snl-dakota/dakota
+    URL: https://github.com/snl-dakota/dakota
+Version:
+  - Name: v6.24.0
+    URL: https://github.com/snl-dakota/dakota/releases/tag/v6.24.0
+Installation:
+  - conda
+Developer:
+  - Tag: blue
+    Name: Sandia National Laboratories
+    URL: https://www.sandia.gov/
+  - Tag: default
+    Name: Dakota contributors
+    URL: https://github.com/snl-dakota/dakota/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://snl-dakota.github.io/docs/latest_release/users/
+  - Name: API
+    URL: https://snl-dakota.github.io/docs/latest_release/developers/
+  - Name: examples
+    URL: https://github.com/snl-dakota/dakota-examples
+  - Name: tutorials
+    URL: https://dakota.sandia.gov/training/
+Support:
+  - Name: GitHub discussions
+    URL: https://github.com/orgs/snl-dakota/discussions
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: uiBlue
+        Name: Gradient-enhanced Kriging (GEK)
+    URL: https://snl-dakota.github.io/docs/latest_release/users/usingdakota/inputfile/model.html#kriging-gaussian-process-spatial-interpolation-models
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: default
+        Name: Reduced Quadratic
+      - Tag: red
+        Name: Quadratic
+    URL: https://snl-dakota.github.io/docs/latest_release/users/usingdakota/inputfile/model.html#kriging-gaussian-process-spatial-interpolation-models
+LengthScale:
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+    URL: https://snl-dakota.github.io/docs/latest_release/users/usingdakota/theory/surrogates.html#experimental-gaussian-process
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+    URL: https://snl-dakota.github.io/docs/latest_release/users/usingdakota/theory/surrogates.html#kriging-gaussian-processes-function-values-only
+    Nugget:
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+    URL: https://snl-dakota.github.io/docs/latest_release/users/usingdakota/inputfile/model.html#kriging-gaussian-process-spatial-interpolation-models
+OptimizationMethods:
+  - Types:
+      - Tag: default
+        Name: DIRECT
+      - Tag: default
+        Name: CONMIN
+      - Tag: default
+        Name: Random sampling
+      - Tag: yellow
+        Name: L-BFGS-B
+    URL: https://snl-dakota.github.io/docs/latest_release/users/usingdakota/inputfile/model.html#kriging-gaussian-process-spatial-interpolation-models
+Resampling: true
+Metrics:
+  - RMSE
+  - MSE
+  - MAE
+  - R2
+  - LOOCV

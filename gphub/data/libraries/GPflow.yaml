@@ -14,8 +14,8 @@ Repository:
   - Name: GPflow/GPflow
     URL: https://github.com/GPflow/GPflow
 Version:
-  - Name: v2.9.2
-    URL: https://github.com/GPflow/GPflow/releases/tag/v2.9.2
+  - Name: v2.11.1
+    URL: https://github.com/GPflow/GPflow/releases/tag/v2.11.1
 Installation:
   - PyPI
 Developer:
@@ -87,8 +87,8 @@ Trend:
   - Types:
       - Tag: blue
         Name: Zero
-      - Tag: default
-        Name: Additive
+      - Tag: red
+        Name: Sum
       - Tag: teal
         Name: Polynomial
       - Tag: orange
@@ -151,14 +151,12 @@ Correlation:
         Name: Separate Independent
       - Tag: default
         Name: Shared Independent
-      - Tag: blue
-        Name: Squared Exponential
       - Tag: default
         Name: Static
       - Tag: default
         Name: Stationary
       - Tag: default
-        Name: White
+        Name: White noise
       - Tag: default
         Name: Custom
     URL: https://gpflow.github.io/GPflow/develop/api/gpflow/kernels/index.html
@@ -228,12 +226,12 @@ EstimationMethods:
       - Tag: default
         Name: Expectation Propagation (EP)
       - Tag: purple
-        Name: Laplace approximation (LA)
+        Name: Laplace Approximation (LA)
     URL: null
 OptimizationMethods:
   - Types:
       - Tag: default
-        Name: NaturalGradient
+        Name: Natural Gradient Descent (NGD)
       - Tag: orange
         Name: Adam
       - Tag: blue

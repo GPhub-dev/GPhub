@@ -14,8 +14,8 @@ Repository:
   - Name: SMTorg/smt
     URL: https://github.com/SMTorg/smt
 Version:
-  - Name: v2.9.2
-    URL: https://github.com/SMTorg/smt/releases/tag/v2.9.2
+  - Name: v2.15.0
+    URL: https://github.com/SMTorg/smt/releases/tag/v2.15.0
 Installation:
   - PyPI
 Developer:
@@ -35,7 +35,7 @@ Developer:
     Name: University of San Diego
     URL: https://www.sandiego.edu
   - Tag: red
-    Name: "Polytechnique Montr\xE9al"
+    Name: Polytechnique Montréal
     URL: https://www.polymtl.ca
   - Tag: default
     Name: SMT contributors
@@ -46,8 +46,8 @@ Docs:
   - Name: tutorials
     URL: https://github.com/SMTorg/smt/tree/master/tutorial
 Support:
-  - Name: null
-    URL: null
+  - Name: GitHub discussions
+    URL: https://github.com/SMTorg/smt/discussions
 Framework:
   - NumPy
   - Numba
@@ -64,7 +64,7 @@ Models:
       - Tag: teal
         Name: Kriging with Partial Least Squares (KPLS / KPLSK)
       - Tag: uiBlue
-        Name: Gradient-enhaced Kriging (GEK)
+        Name: Gradient-enhanced Kriging (GEK)
     URL: https://smt.readthedocs.io/en/latest/_src_docs/surrogate_models.html
 Complexity:
   - O(N^3)
@@ -77,7 +77,7 @@ Trend:
         Name: Linear
       - Tag: red
         Name: Quadratic
-    URL: https://smt.readthedocs.io/en/latest/_src_docs/surrogate_models/krg.html
+    URL: https://smt.readthedocs.io/en/latest/_src_docs/surrogate_models/gpr/krg.html
 LengthScale:
   - Isotropic
   - Anisotropic
@@ -97,7 +97,7 @@ Correlation:
         Name: Categorical
       - Tag: default
         Name: Hierarchical
-    URL: https://smt.readthedocs.io/en/latest/_src_docs/surrogate_models/krg.html
+    URL: https://smt.readthedocs.io/en/latest/_src_docs/surrogate_models/gpr/krg.html
 Mixture: false
 MixtureModels:
   - Types:
@@ -131,7 +131,7 @@ EstimationMethods:
 OptimizationMethods:
   - Types:
       - Tag: green
-        Name: Cobyla
+        Name: COBYLA
       - Tag: teal
         Name: TNC
     URL: null

@@ -1,10 +1,10 @@
 PackageID: ooDACE
 Library:
   - Name: ooDACE
-    URL: null
+    URL: https://sumo.ilabt.imec.be/home/software/oodace
     Reference:
-      - Author: null
-        URL: null
+      - Author: Couckuyt et al. (2014)
+        URL: https://www.jmlr.org/papers/v15/couckuyt14a.html
 Language:
   - Matlab
 License:
@@ -14,11 +14,10 @@ Repository:
   - Name: null
     URL: null
 Version:
-  - Name: null
-    URL: null
+  - Name: v1.4
+    URL: https://sumo.ilabt.imec.be/home/software/oodace/download
 Installation:
   - matlab
-  - startup
 Developer:
   - Tag: uiBlue
     Name: Ghent University
@@ -64,7 +63,7 @@ Correlation:
       - Tag: teal
         Name: Exponential
     URL: null
-Mixture: true
+Mixture: false
 MixtureModels:
   - Types:
       - Tag: null
@@ -72,7 +71,7 @@ MixtureModels:
     URL: null
 Likelihood:
   - Types:
-      - Tag: default
+      - Tag: blue
         Name: Gaussian
     URL: null
     Nugget:
@@ -91,11 +90,11 @@ EstimationMethods:
 OptimizationMethods:
   - Types:
       - Tag: default
-        Name: NLOPT
+        Name: NLopt
       - Tag: default
         Name: PCTOptimizer
     URL: null
 Resampling: false
 Metrics:
   - MSE
-  - Cross-Validation (CV)
+  - CV

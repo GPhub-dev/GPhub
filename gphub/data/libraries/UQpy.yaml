@@ -14,8 +14,8 @@ Repository:
   - Name: SURGroup/UQpy
     URL: https://github.com/SURGroup/UQpy
 Version:
-  - Name: v4.2.0
-    URL: https://github.com/SURGroup/UQpy/releases/tag/v4.2.0
+  - Name: v4.2.1
+    URL: https://github.com/SURGroup/UQpy/releases/tag/v4.2.1
 Installation:
   - PyPI
   - conda
@@ -97,7 +97,7 @@ OptimizationMethods:
       - Tag: default
         Name: MinimizeOptimizer
       - Tag: green
-        Name: FminCobyla
+        Name: COBYLA
     URL: null
 Resampling: false
 Metrics:

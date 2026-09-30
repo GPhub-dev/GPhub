@@ -46,12 +46,12 @@ cd gphub
 make -f new_library name=PackageName
 ```
 
-This will gerate a new file using this base YAML template:
+This will generate a new file from `gphub/utils/libraries/base.yaml` (the schema of record for every library file, shown below) with `PackageID` and `Library.Name` already filled in:
 
 ```YAML
-PackageID: PackageName
+PackageID: null
 Library:
-  - Name: PackageName
+  - Name: null
     URL: null
     Reference:
       - Author: null
@@ -67,6 +67,8 @@ Repository:
 Version:
   - Name: null
     URL: null
+Installation:
+  - null
 Developer:
   - Tag: null
     Name: null
@@ -126,6 +128,9 @@ OptimizationMethods:
       - Tag: null
         Name: null
     URL: null
+Resampling: false
+Metrics:
+  - null
 ```
 
 ### ⚠️ Fixing or adding data to an existing library
@@ -148,14 +153,20 @@ brew install hugo
 
 ## Install Python dependencies
 
+The helper scripts only need PyYAML:
+
 ```sh
-pip install requests beautifulsoup4 lxml pyyaml rich
+cd gphub
+python3 -m venv .venv && .venv/bin/pip install -r utils/requirements.txt
 ```
 
-## Install Prettier for formatting
+## Install the formatting and release tools
+
+Prettier formats the YAML files after every script run; `gh`, `yq` and `jq` are used by the version-update script.
 
 ```sh
-brew install prettier
+brew install prettier gh yq jq
+gh auth login
 ```
 
 ## Deploy
@@ -171,18 +182,35 @@ hugo serve -D
 
 The table is served at [`http://localhost:1313`](http://localhost:1313)
 
-### ⤵️ Fetching version data from the GitHub repositories
+### ⤵️ Updating the release versions
 
-You can fetch the version data of the libraries by running:
+A GitHub Actions workflow (`.github/workflows/update-versions.yml`) refreshes the `Version` of every library from its latest GitHub release (or newest tag) every Monday and opens a pull request with the changes and a rebuilt `Table.html`. Trigger it by hand with:
+
+```shell
+gh workflow run update-versions.yml
+```
+
+The same script can be run locally (it uses your `gh` login):
 
 ```shell
 cd gphub
 make -f fetch_versions
 ```
 
+Libraries that are not hosted on GitHub (DACE, GPML, MUQ, ooDACE, UQLab, UQpyLab) or have no release and no tag (albatross, AutoGP, GPR) are skipped and must be updated by hand; friedrich and SuperGauss are tracked through crates.io and CRAN respectively.
+
+### ✅ Validating the library files
+
+The validator checks every file against `gphub/utils/libraries/base.yaml` and the canonical values recognised by the templates (languages, licences, installation methods, metrics, colour tags, and so on). Run it after any edit:
+
+```shell
+cd gphub
+make -f validate
+```
+
 ### 🛠️ Building a static HTML file
 
-You can generate a static file `Table.html` by running:
+You can regenerate the self-contained `Table.html` (no dev server needed) by running:
 
 ```shell
 make -f table_html

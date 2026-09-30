@@ -3,8 +3,8 @@ Library:
   - Name: libgp
     URL: https://github.com/mblum/libgp
     Reference:
-      - Author: null
-        URL: null
+      - Author: Blum & Riedmiller (2013)
+        URL: https://www.esann.org/sites/default/files/proceedings/legacy/es2013-51.pdf
 Language:
   - C++
 License:
@@ -19,12 +19,12 @@ Version:
 Installation:
   - null
 Developer:
-  - Tag: null
-    Name: null
-    URL: null
+  - Tag: default
+    Name: Manuel Blum
+    URL: https://github.com/mblum
 Docs:
   - Name: docs
-    URL: https://github.com/mblum/libgp/tree/master/doxygen
+    URL: https://github.com/mblum/libgp#readme
 Support:
   - Name: null
     URL: null

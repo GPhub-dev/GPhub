@@ -11,6 +11,8 @@
     {{partial "metrics/R2.html" .}}
     {{else if eq . "LOOCV"}}
     {{partial "metrics/LOOCV.html" .}}
+    {{else if eq . "CV"}}
+    {{partial "metrics/CV.html" .}}
     {{else if eq . "NLPD"}}
     {{partial "metrics/NLPD.html" .}}
     {{else if eq . "MAPE"}}

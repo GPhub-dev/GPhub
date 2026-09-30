@@ -14,8 +14,8 @@ Repository:
   - Name: SheffieldML/GPy
     URL: https://github.com/SheffieldML/GPy
 Version:
-  - Name: v1.13.2
-    URL: https://github.com/SheffieldML/GPy/releases/tag/v1.13.2
+  - Name: v1.14.2
+    URL: https://github.com/SheffieldML/GPy/releases/tag/v1.14.2
 Installation:
   - PyPI
 Developer:
@@ -47,7 +47,7 @@ Models:
         Name: Sparse Gaussian Process Regression (SGPR)
       - Tag: green
         Name: Sparse Gaussian Process Classification (SGPC)
-      - Tag: yellow
+      - Tag: teal
         Name: Variational Gaussian Process (VGP)
       - Tag: orange
         Name: Gaussian Process Latent Variable Model (GPLVM)
@@ -86,7 +86,7 @@ Correlation:
       - Tag: yellow
         Name: Matern
       - Tag: default
-        Name: Browian
+        Name: Brownian
       - Tag: green
         Name: Linear
       - Tag: default
@@ -100,11 +100,9 @@ Correlation:
       - Tag: default
         Name: Coregionalized
       - Tag: default
-        Name: White
+        Name: White noise
       - Tag: green
         Name: Cosine
-      - Tag: teal
-        Name: Exponential Quadratic
       - Tag: teal
         Name: Exponential
       - Tag: red
@@ -114,9 +112,9 @@ Mixture: true
 MixtureModels:
   - Types:
       - Tag: red
-        Name: Addition
+        Name: Sum
       - Tag: green
-        Name: Multiplication
+        Name: Product
       - Tag: default
         Name: Coregionalization
       - Tag: default
@@ -137,7 +135,7 @@ Likelihood:
       - Tag: default
         Name: LogLogistic
       - Tag: default
-        Name: LogGaussian
+        Name: Log Gaussian
       - Tag: default
         Name: Mixed Noise
       - Tag: green
@@ -179,7 +177,7 @@ OptimizationMethods:
       - Tag: default
         Name: Gradient Descent
       - Tag: blue
-        Name: SciPy Optimizer
+        Name: SciPy optimizer
     URL: https://gpy.readthedocs.io/en/devel/GPy.inference.optimization.html
 Resampling: true
 Metrics:

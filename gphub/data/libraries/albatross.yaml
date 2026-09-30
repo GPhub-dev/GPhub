@@ -3,8 +3,8 @@ Library:
   - Name: albatross
     URL: https://swiftnav-albatross.readthedocs.io/en/latest/
     Reference:
-      - Author:
-        URL:
+      - Author: Swift Navigation (2018)
+        URL: https://github.com/swift-nav/albatross
 Language:
   - C++
 License:
@@ -14,8 +14,8 @@ Repository:
   - Name: swift-nav/albatross
     URL: https://github.com/swift-nav/albatross
 Version:
-  - Name:
-    URL:
+  - Name: master (2026-09-22)
+    URL: https://github.com/swift-nav/albatross/commits/master
 Installation:
   - null
 Developer:
@@ -29,8 +29,8 @@ Docs:
   - Name: docs
     URL: https://swiftnav-albatross.readthedocs.io/en/latest/
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework:
   - null
 GPU: false

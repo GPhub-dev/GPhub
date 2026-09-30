@@ -14,8 +14,8 @@ Repository:
   - Name: probsys/AutoGP.jl
     URL: https://github.com/probsys/AutoGP.jl
 Version:
-  - Name: v0.1.9
-    URL: https://github.com/probsys/AutoGP.jl/releases/tag/v0.1.9
+  - Name: v0.1.19
+    URL: https://github.com/probsys/AutoGP.jl/releases/tag/v0.1.19
 Installation:
   - null
 Developer:
@@ -25,7 +25,7 @@ Developer:
   - Tag: green
     Name: Google Research
     URL: https://research.google/
-  - Tag: purple
+  - Tag: red
     Name: Massachusetts Institute of Technology
     URL: https://www.mit.edu/
 Docs:

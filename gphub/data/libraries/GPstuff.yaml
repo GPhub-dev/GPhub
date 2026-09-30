@@ -19,7 +19,6 @@ Version:
   - Name: v4.7
     URL: https://github.com/gpstuff-dev/gpstuff/releases/tag/v4.7
 Installation:
-  - matlab_install
   - matlab
   - CRAN
 Developer:
@@ -84,9 +83,9 @@ Correlation:
       - Tag: green
         Name: Linear
       - Tag: yellow
-        Name: Matern 3/2
+        Name: Matern32
       - Tag: yellow
-        Name: Matern 5/2
+        Name: Matern52
       - Tag: default
         Name: NN
       - Tag: green
@@ -125,7 +124,7 @@ Likelihood:
       - Tag: green
         Name: Poisson
       - Tag: default
-        Name: Negative-binomial
+        Name: Negative Binomial
       - Tag: default
         Name: Hurdle model
       - Tag: teal
@@ -144,7 +143,7 @@ EstimationMethods:
       - Tag: default
         Name: Deviance information criterion (DIC)
       - Tag: green
-        Name: Leave-one-out Cross-Validation (LOOCV)
+        Name: Leave-One-Out Cross-Validation (LOOCV)
       - Tag: default
         Name: Widely Applicable Information Criterion (WAIC)
       - Tag: purple

@@ -36,8 +36,8 @@ Docs:
   - Name: talk
     URL: https://iclr.cc/virtual_2020/poster_SklD9yrFPS.html
 Support:
-  - Name: null
-    URL: null
+  - Name: GitHub discussions
+    URL: https://github.com/google/neural-tangents/discussions
 Framework:
   - null
 GPU: false

@@ -1,5 +1,5 @@
 <!-- LANGUAGE -->
-<td class="cell-language">
+<td class="cell-language" data-langs="{{ delimit .Language "|" }}">
     {{range .Language}}
     {{if eq . "C"}}
     {{partial "language/C.html" .}}

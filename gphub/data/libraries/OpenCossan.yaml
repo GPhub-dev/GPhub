@@ -1,0 +1,104 @@
+PackageID: OpenCossan
+Library:
+  - Name: OpenCossan
+    URL: https://github.com/cossan-working-group/OpenCossan
+    Reference:
+      - Author: Patelli (2017)
+        URL: https://dx.doi.org/10.1007/978-3-319-11259-6_59-1
+Language:
+  - Matlab
+License:
+  - Name: LGPL
+    URL: https://github.com/cossan-working-group/OpenCossan/blob/master/README.md#license
+Repository:
+  - Name: cossan-working-group/OpenCossan
+    URL: https://github.com/cossan-working-group/OpenCossan
+Version:
+  - Name: v1.1.2
+    URL: https://github.com/cossan-working-group/OpenCossan/releases/tag/v1.1.2
+Installation:
+  - matlab
+Developer:
+  - Tag: red
+    Name: University of Liverpool
+    URL: https://www.liverpool.ac.uk/
+  - Tag: blue
+    Name: Leibniz University Hannover
+    URL: https://www.irz.uni-hannover.de/en/
+  - Tag: default
+    Name: OpenCossan contributors
+    URL: https://github.com/cossan-working-group/OpenCossan/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://github.com/cossan-working-group/OpenCossan/tree/master/doc
+  - Name: tutorials
+    URL: https://github.com/cossan-working-group/OpenCossan/tree/master/COSSANXengine/examples/Tutorials
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+    URL: https://github.com/cossan-working-group/OpenCossan/blob/master/COSSANXengine/src/metamodel/@KrigingModel/KrigingModel.m
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: red
+        Name: Quadratic
+    URL: https://github.com/cossan-working-group/OpenCossan/blob/master/COSSANXengine/src/metamodel/@KrigingModel/KrigingModel.m
+LengthScale:
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: teal
+        Name: Exponential
+      - Tag: teal
+        Name: Power Exponential
+      - Tag: blue
+        Name: Gaussian
+      - Tag: green
+        Name: Linear
+      - Tag: default
+        Name: Spherical
+      - Tag: default
+        Name: Spline
+    URL: https://github.com/cossan-working-group/OpenCossan/blob/master/COSSANXengine/src/metamodel/@KrigingModel/KrigingModel.m
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: null
+        Name: null
+EstimationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Resampling: false
+Metrics:
+  - R2

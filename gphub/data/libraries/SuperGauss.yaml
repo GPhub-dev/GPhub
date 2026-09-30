@@ -14,8 +14,8 @@ Repository:
   - Name: mlysy/SuperGauss
     URL: https://github.com/mlysy/SuperGauss
 Version:
-  - Name:
-    URL:
+  - Name: 2.0.4
+    URL: https://cran.r-project.org/package=SuperGauss
 Installation:
   - null
 Developer:
@@ -31,8 +31,8 @@ Docs:
   - Name: tutorials
     URL: https://cran.r-project.org/web/packages/SuperGauss/vignettes/SuperGauss-quicktut.html
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework:
   - null
 GPU: false

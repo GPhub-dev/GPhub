@@ -1,7 +1,7 @@
 PackageID: GPJax
 Library:
   - Name: GPJax
-    URL: https://docs.jaxgaussianprocesses.com
+    URL: https://gpjax.quantclimate.com
     Reference:
       - Author: Pinder et al. (2022)
         URL: https://joss.theoj.org/papers/10.21105/joss.04455#
@@ -9,13 +9,13 @@ Language:
   - Python
 License:
   - Name: Apache-2.0
-    URL: https://github.com/JaxGaussianProcesses/GPJax/blob/main/LICENSE
+    URL: https://github.com/QuantClimate/GPJax/blob/main/LICENSE.txt
 Repository:
-  - Name: JaxGaussianProcesses/GPJax
-    URL: https://github.com/JaxGaussianProcesses/GPJax
+  - Name: QuantClimate/GPJax
+    URL: https://github.com/QuantClimate/GPJax
 Version:
-  - Name: v0.11.0
-    URL: https://github.com/JaxGaussianProcesses/GPJax/releases/tag/v0.11.0
+  - Name: v1.0.0
+    URL: https://github.com/QuantClimate/GPJax/releases/tag/v1.0.0
 Installation:
   - PyPI
 Developer:
@@ -27,14 +27,14 @@ Developer:
     URL: https://github.com/JaxGaussianProcesses/GPJax/graphs/contributors
 Docs:
   - Name: docs
-    URL: https://docs.jaxgaussianprocesses.com
+    URL: https://gpjax.quantclimate.com
   - Name: tutorials
-    URL: https://docs.jaxgaussianprocesses.com/_examples/regression/
+    URL: https://gpjax.quantclimate.com/_examples/regression/
   - Name: API
-    URL: https://docs.jaxgaussianprocesses.com/api/gps/#gpjax.gps.construct_posterior--returnshttps://docs.jaxgaussianprocesses.com/examples/regression/
+    URL: https://gpjax.quantclimate.com/api/gps/
 Support:
   - Name: GitHub discussions
-    URL: https://github.com/orgs/JaxGaussianProcesses/discussions
+    URL: https://github.com/QuantClimate/GPJax/discussions
   - Name: contact form
     URL: https://jaxgaussianprocesses.com/contact/
 Framework:
@@ -43,9 +43,9 @@ GPU: true
 Models:
   - Types:
       - Tag: blue
-        Name: Gaussian Processes Regression (GPR)
+        Name: Gaussian Process Regression (GPR)
       - Tag: orange
-        Name: Gaussian Processes Classification (GPC)
+        Name: Gaussian Process Classification (GPC)
       - Tag: yellow
         Name: Deep Gaussian Processes (DGP)
       - Tag: green
@@ -66,7 +66,7 @@ Trend:
         Name: Constant
       - Tag: default
         Name: Combination
-    URL: https://docs.jaxgaussianprocesses.com/api/mean_functions/
+    URL: https://gpjax.quantclimate.com/api/mean_functions/
 LengthScale:
   - Isotropic
   - Anisotropic
@@ -83,7 +83,7 @@ Correlation:
       - Tag: red
         Name: Rational Quadratic
       - Tag: teal
-        Name: Powered Exponential
+        Name: Power Exponential
       - Tag: green
         Name: Periodic
       - Tag: default
@@ -94,7 +94,6 @@ Correlation:
         Name: Polynomial
       - Tag: default
         Name: Graph kernels
-      - Tag: default
       - Tag: green
         Name: Non-stationary ArcCosine
       - Tag: green
@@ -103,7 +102,7 @@ Correlation:
         Name: Non-stationary Polynomial
       - Tag: default
         Name: Custom
-    URL: https://docs.jaxgaussianprocesses.com/_examples/constructing_new_kernels/
+    URL: https://gpjax.quantclimate.com/_examples/constructing_new_kernels/
 Mixture: true
 MixtureModels:
   - Types:
@@ -111,7 +110,7 @@ MixtureModels:
         Name: Sum
       - Tag: green
         Name: Product
-    URL: https://docs.jaxgaussianprocesses.com/_examples/constructing_new_kernels/
+    URL: https://gpjax.quantclimate.com/_examples/constructing_new_kernels/
 Likelihood:
   - Types:
       - Tag: blue
@@ -120,7 +119,7 @@ Likelihood:
         Name: Bernoulli
       - Tag: green
         Name: Poisson
-    URL: https://docs.jaxgaussianprocesses.com/api/likelihoods/#gpjax.likelihoods.AbstractLikelihood.__call__
+    URL: https://gpjax.quantclimate.com/api/likelihoods/#gpjax.likelihoods.AbstractLikelihood.__call__
     Nugget:
       - Tag: default
         Name: Custom
@@ -145,7 +144,7 @@ EstimationMethods:
         Name: Evidence Lower Bound (ELBO)
       - Tag: teal
         Name: Variational Expectation (VE)
-    URL: https://docs.jaxgaussianprocesses.com/api/objectives/?h=elbo
+    URL: https://gpjax.quantclimate.com/api/objectives/?h=elbo
 OptimizationMethods:
   - Types:
       - Tag: default

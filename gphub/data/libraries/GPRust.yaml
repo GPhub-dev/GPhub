@@ -1,0 +1,82 @@
+PackageID: GPRust
+Library:
+  - Name: GPRust
+    URL: https://github.com/KentaKato/GPRust
+    Reference:
+      - Author: KentaKato (2024)
+        URL: https://github.com/KentaKato/GPRust
+Language:
+  - Rust
+License:
+  - Name: null
+    URL: null
+Repository:
+  - Name: KentaKato/GPRust
+    URL: https://github.com/KentaKato/GPRust
+Version:
+  - Name: main (2024-03-22)
+    URL: https://github.com/KentaKato/GPRust/commits/main
+Installation:
+  - null
+Developer:
+  - Tag: default
+    Name: GPRust contributors
+    URL: https://github.com/KentaKato/GPRust/graphs/contributors
+Docs:
+  - Name: examples
+    URL: https://github.com/KentaKato/GPRust#demo
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+    URL: https://github.com/KentaKato/GPRust#readme
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+LengthScale:
+  - null
+Correlation:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: null
+        Name: null
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+    URL: https://github.com/KentaKato/GPRust#hyperparameters-optimization
+OptimizationMethods:
+  - Types:
+      - Tag: default
+        Name: Grid Search
+    URL: https://github.com/KentaKato/GPRust#hyperparameters-optimization
+Resampling: false
+Metrics:
+  - null

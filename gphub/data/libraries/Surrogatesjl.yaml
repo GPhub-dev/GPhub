@@ -3,8 +3,8 @@ Library:
   - Name: Surrogates.jl
     URL: https://docs.sciml.ai/Surrogates/stable/
     Reference:
-      - Author: null
-        URL: null
+      - Author: Rackauckas et al. (2024)
+        URL: https://doi.org/10.5281/zenodo.12571718
 Language:
   - Julia
 License:
@@ -14,8 +14,8 @@ Repository:
   - Name: SciML/Surrogates.jl
     URL: https://github.com/SciML/Surrogates.jl
 Version:
-  - Name: v6.11.0
-    URL: https://github.com/SciML/Surrogates.jl/releases/tag/v6.11.0
+  - Name: v8.0.0
+    URL: https://github.com/SciML/Surrogates.jl/releases/tag/v8.0.0
 Installation:
   - null
 Developer:

@@ -14,8 +14,8 @@ Repository:
   - Name: dfm/tinygp
     URL: https://github.com/dfm/tinygp
 Version:
-  - Name: v0.3.0
-    URL: https://github.com/dfm/tinygp/releases/tag/v0.3.0
+  - Name: v0.3.1
+    URL: https://github.com/dfm/tinygp/releases/tag/v0.3.1
 Installation:
   - PyPI
 Developer:
@@ -44,7 +44,7 @@ Models:
       - Tag: blue
         Name: Gaussian Process Regression (GPR)
       - Tag: default
-        Name: Scalable Gaussian Processes (SGP)
+        Name: Scalable Gaussian Processes
 Complexity:
   - O(N^3)
 Trend:

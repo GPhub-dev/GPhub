@@ -3,8 +3,8 @@ Library:
   - Name: AbstractGPs.jl
     URL: https://juliagaussianprocesses.github.io/AbstractGPs.jl/dev/
     Reference:
-      - Author: null
-        URL: null
+      - Author: JuliaGaussianProcesses (2020)
+        URL: https://github.com/JuliaGaussianProcesses/AbstractGPs.jl
 Language:
   - Julia
 License:

@@ -1,0 +1,119 @@
+PackageID: pyinterpolate
+Library:
+  - Name: pyinterpolate
+    URL: https://pyinterpolate.readthedocs.io/en/stable/
+    Reference:
+      - Author: "Moliński (2022)"
+        URL: https://doi.org/10.21105/joss.02869
+Language:
+  - Python
+License:
+  - Name: BSD-3-Clause
+    URL: https://github.com/DataverseLabs/pyinterpolate/blob/main/LICENSE.md
+Repository:
+  - Name: DataverseLabs/pyinterpolate
+    URL: https://github.com/DataverseLabs/pyinterpolate
+Version:
+  - Name: v1.2.1
+    URL: https://github.com/DataverseLabs/pyinterpolate/releases/tag/v1.2.1
+Installation:
+  - PyPI
+  - conda
+Developer:
+  - Tag: blue
+    Name: Dataverse Labs
+    URL: https://dataverselabs.com
+  - Tag: default
+    Name: pyinterpolate contributors
+    URL: https://github.com/DataverseLabs/pyinterpolate/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://pyinterpolate.readthedocs.io/en/stable/
+  - Name: tutorials
+    URL: https://pyinterpolate.readthedocs.io/en/stable/usage/tutorials.html
+  - Name: jupyter notebooks
+    URL: https://github.com/DataverseLabs/pyinterpolate/tree/main/tutorials
+  - Name: API
+    URL: https://pyinterpolate.readthedocs.io/en/stable/api/api.html
+Support:
+  - Name: GitHub discussions
+    URL: https://github.com/DataverseLabs/pyinterpolate/discussions
+  - Name: chat
+    URL: https://discord.gg/3EMuRkj
+Framework:
+  - NumPy
+  - SciPy
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: default
+        Name: Indicator Kriging
+      - Tag: default
+        Name: Poisson Kriging
+      - Tag: default
+        Name: Block Kriging (area-to-area, area-to-point)
+    URL: https://pyinterpolate.readthedocs.io/en/stable/api/api.html
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+    URL: https://pyinterpolate.readthedocs.io/en/stable/api/kriging/point_kriging.html
+LengthScale:
+  - Isotropic
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: default
+        Name: Circular
+      - Tag: default
+        Name: Cubic
+      - Tag: teal
+        Name: Exponential
+      - Tag: blue
+        Name: Gaussian
+      - Tag: green
+        Name: Linear
+      - Tag: default
+        Name: Power
+      - Tag: default
+        Name: Spherical
+    URL: https://pyinterpolate.readthedocs.io/en/stable/api/semivariogram/theoretical.html
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+    URL: https://pyinterpolate.readthedocs.io/en/stable/api/semivariogram/theoretical.html
+    Nugget:
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
+    Noise:
+      - Tag: null
+        Name: null
+EstimationMethods:
+  - Types:
+      - Tag: default
+        Name: Variogram autofit (RMSE/MAE/Bias/SMAPE)
+    URL: https://pyinterpolate.readthedocs.io/en/stable/api/semivariogram/theoretical.html
+OptimizationMethods:
+  - Types:
+      - Tag: default
+        Name: Grid Search
+    URL: https://pyinterpolate.readthedocs.io/en/stable/api/semivariogram/theoretical.html
+Resampling: true
+Metrics:
+  - RMSE
+  - MAE

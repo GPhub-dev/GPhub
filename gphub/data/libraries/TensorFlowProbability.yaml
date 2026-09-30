@@ -1,0 +1,177 @@
+PackageID: TensorFlowProbability
+Library:
+  - Name: TensorFlow Probability
+    URL: https://www.tensorflow.org/probability/
+    Reference:
+      - Author: Dillon et al. (2017)
+        URL: https://arxiv.org/abs/1711.10604
+Language:
+  - Python
+License:
+  - Name: Apache-2.0
+    URL: https://github.com/tensorflow/probability/blob/main/LICENSE
+Repository:
+  - Name: tensorflow/probability
+    URL: https://github.com/tensorflow/probability
+Version:
+  - Name: v0.25.0
+    URL: https://github.com/tensorflow/probability/releases/tag/v0.25.0
+Installation:
+  - PyPI
+  - conda
+Developer:
+  - Tag: green
+    Name: Google
+    URL: https://research.google
+  - Tag: blue
+    Name: Columbia University
+    URL: https://www.columbia.edu
+  - Tag: default
+    Name: TensorFlow Probability contributors
+    URL: https://github.com/tensorflow/probability/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://www.tensorflow.org/probability/
+  - Name: API
+    URL: https://www.tensorflow.org/probability/api_docs/python/tfp
+  - Name: tutorials
+    URL: https://www.tensorflow.org/probability/examples/Gaussian_Process_Regression_In_TFP
+  - Name: examples
+    URL: https://github.com/tensorflow/probability/tree/main/tensorflow_probability/examples/
+  - Name: jupyter notebooks
+    URL: https://github.com/tensorflow/probability/tree/main/tensorflow_probability/examples/jupyter_notebooks
+Support:
+  - Name: stackoverflow
+    URL: https://stackoverflow.com/questions/tagged/tensorflow
+  - Name: mailing-list
+    URL: https://groups.google.com/a/tensorflow.org/forum/#!forum/tfprobability
+  - Name: blog
+    URL: https://blog.tensorflow.org/
+Framework:
+  - TensorFlow
+  - JAX
+GPU: true
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: teal
+        Name: Variational Gaussian Process (VGP)
+      - Tag: default
+        Name: Student-T Process Regression
+      - Tag: orange
+        Name: Gaussian Process Latent Variable Model (GPLVM)
+      - Tag: red
+        Name: Multi-output Gaussian Process (MOGP)
+    URL: https://www.tensorflow.org/probability/api_docs/python/tfp/distributions
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: blue
+        Name: Zero
+      - Tag: default
+        Name: Custom
+    URL: https://www.tensorflow.org/probability/api_docs/python/tfp/distributions/GaussianProcess
+LengthScale:
+  - Isotropic
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: yellow
+        Name: Matern12
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+      - Tag: yellow
+        Name: Matern
+      - Tag: green
+        Name: Periodic
+      - Tag: red
+        Name: Rational Quadratic
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: teal
+        Name: Polynomial
+      - Tag: default
+        Name: Gamma Exponential
+      - Tag: default
+        Name: Exponential Curve
+      - Tag: default
+        Name: Parabolic
+      - Tag: default
+        Name: Pointwise Exponential
+      - Tag: default
+        Name: Spectral Mixture
+      - Tag: default
+        Name: Change Points
+      - Tag: default
+        Name: Schur Complement
+      - Tag: default
+        Name: Feature Scaled
+      - Tag: default
+        Name: Feature Transformed
+      - Tag: default
+        Name: Kumaraswamy Transformed
+      - Tag: default
+        Name: Custom
+    URL: https://www.tensorflow.org/probability/api_docs/python/tfp/math/psd_kernels
+Mixture: true
+MixtureModels:
+  - Types:
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+    URL: https://www.tensorflow.org/probability/api_docs/python/tfp/math/psd_kernels/PositiveSemidefiniteKernel
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+      - Tag: default
+        Name: Custom
+    URL: https://www.tensorflow.org/probability/api_docs/python/tfp/distributions/VariationalGaussianProcess
+    Nugget:
+      - Tag: default
+        Name: Custom
+      - Tag: blue
+        Name: "default value: 1e-6"
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: red
+        Name: Evidence Lower Bound (ELBO)
+      - Tag: teal
+        Name: Variational Inference (VI)
+      - Tag: default
+        Name: Markov Chain Monte Carlo (MCMC)
+    URL: https://www.tensorflow.org/probability/api_docs/python/tfp/distributions/GaussianProcess
+OptimizationMethods:
+  - Types:
+      - Tag: orange
+        Name: Adam
+      - Tag: yellow
+        Name: L-BFGS
+      - Tag: yellow
+        Name: BFGS
+      - Tag: default
+        Name: Nelder-Mead
+      - Tag: default
+        Name: Differential Evolution
+      - Tag: default
+        Name: Stochastic Gradient Langevin Dynamics (SGLD)
+      - Tag: default
+        Name: Variational SGD
+    URL: https://www.tensorflow.org/probability/api_docs/python/tfp/optimizer
+Resampling: false
+Metrics:
+  - null

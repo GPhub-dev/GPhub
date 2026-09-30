@@ -14,8 +14,8 @@ Repository:
   - Name: pymc-devs/pymc
     URL: https://github.com/pymc-devs/pymc
 Version:
-  - Name: v5.22.0
-    URL: https://github.com/pymc-devs/pymc/releases/tag/v5.22.0
+  - Name: v6.3.2
+    URL: https://github.com/pymc-devs/pymc/releases/tag/v6.3.2
 Installation:
   - null
 Developer:
@@ -36,7 +36,7 @@ Developer:
     URL: https://www.sickkids.ca
   - Tag: red
     Name: Philadelphia Phillies Baseball Operations Department
-    URL: https://boards.greenhouse.io/philadelphiaphilliesrddepartment
+    URL: https://www.mlb.com/phillies
   - Tag: blue
     Name: PyMC Labs
     URL: https://www.pymc-labs.com
@@ -47,7 +47,7 @@ Developer:
     Name: Universidad Nacional de San Luis
     URL: https://www.unsl.edu.ar
   - Tag: blue
-    Name: "Forschungszentrum J\xFClich"
+    Name: Forschungszentrum Jülich
     URL: https://www.fz-juelich.de
   - Tag: blue
     Name: University of Oxford

@@ -3,8 +3,8 @@ Library:
   - Name: GPR
     URL: https://github.com/ChristophJud/GPR
     Reference:
-      - Author:
-        URL:
+      - Author: Jud (2015)
+        URL: https://github.com/ChristophJud/GPR
 Language:
   - C++
 License:
@@ -14,8 +14,8 @@ Repository:
   - Name: ChristophJud/GPR
     URL: https://github.com/ChristophJud/GPR
 Version:
-  - Name:
-    URL:
+  - Name: master (2015-07-31)
+    URL: https://github.com/ChristophJud/GPR/commits/master
 Installation:
   - null
 Developer:
@@ -23,11 +23,11 @@ Developer:
     Name: University of Basel
     URL: https://www.unibas.ch
 Docs:
-  - Name:
-    URL:
+  - Name: docs
+    URL: https://github.com/ChristophJud/GPR#readme
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework:
   - null
 GPU: false

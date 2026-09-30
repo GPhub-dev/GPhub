@@ -1,0 +1,102 @@
+PackageID: gptk
+Library:
+  - Name: gptk
+    URL: https://cran.r-project.org/package=gptk
+    Reference:
+      - Author: Kalaitzis et al. (2014)
+        URL: https://cran.r-project.org/package=gptk
+Language:
+  - R
+License:
+  - Name: FreeBSD
+    URL: https://github.com/cran/gptk/blob/master/LICENSE
+Repository:
+  - Name: cran/gptk
+    URL: https://github.com/cran/gptk
+Version:
+  - Name: "1.08"
+    URL: https://cran.r-project.org/src/contrib/Archive/gptk/
+Installation:
+  - null
+Developer:
+  - Tag: purple
+    Name: University of Sheffield
+    URL: https://www.sheffield.ac.uk/
+  - Tag: yellow
+    Name: University of Cambridge
+    URL: https://www.cam.ac.uk/
+  - Tag: default
+    Name: Aalto University
+    URL: https://www.aalto.fi/en
+Docs:
+  - Name: docs
+    URL: https://rdrr.io/cran/gptk/
+  - Name: examples
+    URL: https://github.com/cran/gptk/blob/master/inst/doc/index.html
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: green
+        Name: Sparse Gaussian Process Regression (SGPR)
+      - Tag: uiBlue
+        Name: GPR with Fully Independent Training Conditional (FITC)
+      - Tag: uiBlue
+        Name: GPR with Partial Independent Training Conditional (PITC)
+      - Tag: default
+        Name: GPR with Deterministic Training Conditional (DTC)
+    URL: https://rdrr.io/cran/gptk/man/gpOptions.html
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+LengthScale:
+  - Isotropic
+Correlation:
+  - Types:
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: default
+        Name: White noise
+    URL: https://rdrr.io/cran/gptk/man/kernCreate.html
+Mixture: true
+MixtureModels:
+  - Types:
+      - Tag: red
+        Name: Sum
+    URL: https://rdrr.io/cran/gptk/man/kernCreate.html
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+    URL: https://rdrr.io/cran/gptk/man/noiseCreate.html
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+    URL: https://rdrr.io/cran/gptk/man/gpLogLikelihood.html
+OptimizationMethods:
+  - Types:
+      - Tag: default
+        Name: Scaled Conjugate Gradient (SCG)
+      - Tag: orange
+        Name: Conjugate Gradient (CG)
+    URL: https://rdrr.io/cran/gptk/man/SCGoptim.html
+Resampling: false
+Metrics:
+  - null

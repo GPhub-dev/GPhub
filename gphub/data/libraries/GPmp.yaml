@@ -1,0 +1,127 @@
+PackageID: GPmp
+Library:
+  - Name: GPmp
+    URL: https://gpmp-dev.github.io/gpmp/
+    Reference:
+      - Author: Vazquez (2026)
+        URL: https://github.com/gpmp-dev/gpmp
+Language:
+  - Python
+License:
+  - Name: GPL-3.0
+    URL: https://github.com/gpmp-dev/gpmp/blob/main/LICENSE.txt
+Repository:
+  - Name: gpmp-dev/gpmp
+    URL: https://github.com/gpmp-dev/gpmp
+Version:
+  - Name: v0.9.31
+    URL: https://github.com/gpmp-dev/gpmp/releases/tag/v0.9.31
+Installation:
+  - PyPI
+Developer:
+  - Tag: red
+    Name: CentraleSupélec
+    URL: https://www.centralesupelec.fr
+  - Tag: default
+    Name: GPmp contributors
+    URL: https://github.com/gpmp-dev/gpmp/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://gpmp-dev.github.io/gpmp/
+  - Name: tutorials
+    URL: https://gpmp-dev.github.io/gpmp/tutorial.html
+  - Name: examples
+    URL: https://gpmp-dev.github.io/gpmp/examples/index.html
+  - Name: API
+    URL: https://gpmp-dev.github.io/gpmp/gpmp.html
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - NumPy
+  - SciPy
+  - PyTorch
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+    URL: https://gpmp-dev.github.io/gpmp/gpmp.core.html
+Complexity:
+  - O(N^3)
+Trend:
+  - Types:
+      - Tag: blue
+        Name: Zero
+      - Tag: orange
+        Name: Constant
+      - Tag: default
+        Name: Linear Predictor (Universal Kriging)
+      - Tag: default
+        Name: Custom
+    URL: https://gpmp-dev.github.io/gpmp/gpmp.core.html
+LengthScale:
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: teal
+        Name: Exponential
+      - Tag: yellow
+        Name: Matern12
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+      - Tag: yellow
+        Name: Matern
+      - Tag: default
+        Name: Custom
+    URL: https://gpmp-dev.github.io/gpmp/gpmp.kernel.covariance.html
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+    URL: https://gpmp-dev.github.io/gpmp/examples/regression_noisy.html
+    Nugget:
+      - Tag: default
+        Name: Custom
+      - Tag: blue
+        Name: "default value: 10*sigma2*eps_mach"
+    Noise:
+      - Tag: default
+        Name: Custom
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: blue
+        Name: Restricted Maximum Likelihood Estimation (REMLE)
+      - Tag: default
+        Name: Restricted Maximum A Posteriori (REMAP)
+      - Tag: default
+        Name: Markov Chain Monte Carlo (MCMC)
+      - Tag: default
+        Name: Sequential Monte Carlo (SMC)
+    URL: https://gpmp-dev.github.io/gpmp/gpmp.kernel.selection.html
+OptimizationMethods:
+  - Types:
+      - Tag: default
+        Name: SLSQP
+      - Tag: yellow
+        Name: L-BFGS-B
+      - Tag: blue
+        Name: SciPy optimizer
+    URL: https://gpmp-dev.github.io/gpmp/gpmp.kernel.selection.html
+Resampling: true
+Metrics:
+  - RMSE
+  - R2
+  - LOOCV

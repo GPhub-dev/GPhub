@@ -1,0 +1,112 @@
+PackageID: fdagstat
+Library:
+  - Name: fdagstat
+    URL: https://github.com/ogru/fdagstat
+    Reference:
+      - Author: Grujic et al. (2017)
+        URL: https://github.com/ogru/fdagstat
+Language:
+  - R
+License:
+  - Name: GPL-2.0
+    URL: https://github.com/ogru/fdagstat/blob/master/LICENSE.txt
+Repository:
+  - Name: ogru/fdagstat
+    URL: https://github.com/ogru/fdagstat
+Version:
+  - Name: "1.0"
+    URL: https://github.com/ogru/fdagstat/releases/tag/1.0
+Installation:
+  - null
+Developer:
+  - Tag: red
+    Name: Stanford University
+    URL: https://www.stanford.edu
+  - Tag: purple
+    Name: Politecnico di Milano
+    URL: https://www.polimi.it
+Docs:
+  - Name: tutorials
+    URL: https://github.com/ogru/fdagstat/tree/master/vignette
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: red
+        Name: Multi-output Gaussian Process (MOGP)
+      - Tag: default
+        Name: Ordinary Trace Kriging
+      - Tag: default
+        Name: Universal Trace Kriging
+      - Tag: default
+        Name: Universal Trace Co-Kriging
+      - Tag: default
+        Name: Co-Kriging of FPC scores
+    URL: https://github.com/ogru/fdagstat#implemented-methods
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+    URL: https://github.com/ogru/fdagstat/blob/master/man/estimateDrift.Rd
+LengthScale:
+  - Isotropic
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+      - Tag: yellow
+        Name: Matern
+      - Tag: default
+        Name: Custom
+    URL: https://github.com/ogru/fdagstat/tree/master/vignette
+Mixture: true
+MixtureModels:
+  - Types:
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+      - Tag: default
+        Name: Product-Sum
+      - Tag: default
+        Name: Separable
+    URL: https://github.com/ogru/fdagstat/blob/master/man/addCovariance.Rd
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+    URL: https://github.com/ogru/fdagstat/blob/master/man/fitVariograms.Rd
+    Nugget:
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
+    Noise:
+      - Tag: null
+        Name: null
+EstimationMethods:
+  - Types:
+      - Tag: default
+        Name: Ordinary Least Squares (OLS)
+      - Tag: default
+        Name: Generalised Least Squares (GLS)
+    URL: https://github.com/ogru/fdagstat/blob/master/man/estimateDrift.Rd
+OptimizationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Resampling: true
+Metrics:
+  - null

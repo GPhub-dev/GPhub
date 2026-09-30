@@ -3,8 +3,8 @@ Library:
   - Name: go-kriging
     URL: https://github.com/lvisei/go-kriging
     Reference:
-      - Author: null
-        URL: null
+      - Author: lvisei (2020)
+        URL: https://github.com/lvisei/go-kriging
 Language:
   - GO
 License:
@@ -19,12 +19,12 @@ Version:
 Installation:
   - null
 Developer:
-  - Tag: null
-    Name: null
-    URL: null
+  - Tag: default
+    Name: lvisei
+    URL: https://github.com/lvisei
 Docs:
-  - Name: null
-    URL: null
+  - Name: docs
+    URL: https://pkg.go.dev/github.com/lvisei/go-kriging
 Support:
   - Name: null
     URL: null

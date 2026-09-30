@@ -4,7 +4,7 @@ Library:
     URL: https://wessel.ai/stheno/docs/_build/html/index.html
     Reference:
       - Author: Tebbutt et al. (2019)
-        URL: https://willtebbutt.github.io/resources/stheno_juliacon_2019.pdf
+        URL: https://github.com/JuliaGaussianProcesses/Stheno.jl
 Language:
   - Julia
   - Python

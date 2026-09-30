@@ -1,0 +1,129 @@
+PackageID: GeoStatsjl
+Library:
+  - Name: GeoStats.jl
+    URL: https://juliaearth.github.io/GeoStatsDocs/stable
+    Reference:
+      - Author: Hoffimann (2018)
+        URL: https://doi.org/10.21105/joss.00692
+Language:
+  - Julia
+License:
+  - Name: MIT
+    URL: https://github.com/JuliaEarth/GeoStats.jl/blob/master/LICENSE
+Repository:
+  - Name: JuliaEarth/GeoStats.jl
+    URL: https://github.com/JuliaEarth/GeoStats.jl
+Version:
+  - Name: v0.90.2
+    URL: https://github.com/JuliaEarth/GeoStats.jl/releases/tag/v0.90.2
+Installation:
+  - Pkg.jl
+Developer:
+  - Tag: red
+    Name: Stanford University
+    URL: https://www.stanford.edu
+  - Tag: default
+    Name: GeoStats.jl contributors
+    URL: https://github.com/JuliaEarth/GeoStats.jl/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://juliaearth.github.io/GeoStatsDocs/stable
+  - Name: tutorials
+    URL: https://juliaearth.github.io/GeoStatsDocs/stable/quickstart/
+  - Name: user manuals
+    URL: https://juliaearth.github.io/geospatial-data-science-with-julia
+  - Name: talk
+    URL: https://www.youtube.com/watch?v=75A6zyn5pIE
+Support:
+  - Name: chat
+    URL: https://julialang.zulipchat.com/#narrow/stream/276201-geostats.2Ejl
+  - Name: GitHub discussions
+    URL: https://github.com/JuliaEarth/GeoStats.jl/discussions
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: default
+        Name: Simple Kriging (SK)
+      - Tag: default
+        Name: Ordinary Kriging (OK)
+      - Tag: default
+        Name: Universal Kriging (UK)
+      - Tag: red
+        Name: Multi-output Gaussian Process (MOGP)
+    URL: https://juliaearth.github.io/GeoStatsDocs/stable/interpolation/
+Complexity:
+  - O(N^3)
+Trend:
+  - Types:
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: red
+        Name: Quadratic
+      - Tag: teal
+        Name: Polynomial
+      - Tag: default
+        Name: Custom
+    URL: https://juliaearth.github.io/GeoStatsDocs/stable/interpolation/
+LengthScale:
+  - Isotropic
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+      - Tag: default
+        Name: Spherical
+      - Tag: teal
+        Name: Exponential
+      - Tag: yellow
+        Name: Matern
+      - Tag: default
+        Name: Cubic
+      - Tag: default
+        Name: Penta-Spherical
+      - Tag: default
+        Name: Sine Hole
+      - Tag: default
+        Name: Circular
+    URL: https://juliaearth.github.io/GeoStatsDocs/stable/covariances/
+Mixture: true
+MixtureModels:
+  - Types:
+      - Tag: red
+        Name: Sum
+      - Tag: teal
+        Name: Scale
+    URL: https://juliaearth.github.io/GeoStatsDocs/stable/functions/
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+    URL: https://juliaearth.github.io/GeoStatsDocs/stable/fieldprocs/
+    Nugget:
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: default
+        Name: Weighted Least Squares (WLS)
+    URL: https://juliaearth.github.io/GeoStatsDocs/stable/functions/
+OptimizationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Resampling: true
+Metrics:
+  - LOOCV
+  - Validation Error

@@ -14,8 +14,8 @@ Repository:
   - Name: cornellius-gp/gpytorch
     URL: https://github.com/cornellius-gp/gpytorch
 Version:
-  - Name: v1.14
-    URL: https://github.com/cornellius-gp/gpytorch/releases/tag/v1.14
+  - Name: v1.15.2
+    URL: https://github.com/cornellius-gp/gpytorch/releases/tag/v1.15.2
 Installation:
   - PyPI
   - conda
@@ -72,7 +72,7 @@ Models:
       - Tag: red
         Name: Approximate GP Inference
       - Tag: yellow
-        Name: Deep GPs
+        Name: Deep Gaussian Processes (DGP)
       - Tag: orange
         Name: Gaussian Process Latent Variable Model (GPLVM)
       - Tag: red
@@ -111,7 +111,7 @@ Correlation:
       - Tag: green
         Name: Periodic
       - Tag: teal
-        Name: Picewise Polynomial
+        Name: Piecewise Polynomial
       - Tag: teal
         Name: Polynomial
       - Tag: blue
@@ -140,8 +140,6 @@ Correlation:
         Name: RFFK
       - Tag: default
         Name: Hamming IMQ
-      - Tag: default
-        Name: Hamming IMQ
       - Tag: blue
         Name: Gaussian Symmetrized KL
       - Tag: default
@@ -151,7 +149,7 @@ Mixture: true
 MixtureModels:
   - Types:
       - Tag: red
-        Name: Additive
+        Name: Sum
       - Tag: green
         Name: Product
       - Tag: teal
@@ -201,9 +199,9 @@ EstimationMethods:
       - Tag: blue
         Name: Maximum Likelihood Estimation (MLE)
       - Tag: green
-        Name: Leave One Out Cross Validation (LOO-CV)
+        Name: Leave-One-Out Cross-Validation (LOOCV)
       - Tag: red
-        Name: Variational evidence lower bound (ELBO)
+        Name: Evidence Lower Bound (ELBO)
       - Tag: teal
         Name: Variational Inference (VI)
       - Tag: default

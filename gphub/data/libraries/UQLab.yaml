@@ -17,7 +17,7 @@ Version:
   - Name: v2.1.0
     URL: https://www.uqlab.com/release-notes
 Installation:
-  - uqlab_install
+  - matlab
 Developer:
   - Tag: default
     Name: RSUQ ETH Zürich

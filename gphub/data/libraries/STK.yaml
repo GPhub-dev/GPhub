@@ -18,10 +18,10 @@ Version:
   - Name: 2.8.1
     URL: https://github.com/stk-kriging/stk/releases/tag/2.8.1
 Installation:
-  - stk_init
+  - matlab
 Developer:
   - Tag: red
-    Name: "CentraleSup\xE9lec"
+    Name: CentraleSupélec
     URL: https://www.centralesupelec.fr
   - Tag: default
     Name: STK contributors
@@ -64,7 +64,7 @@ Correlation:
         Name: Matern32
       - Tag: yellow
         Name: Matern52
-      - Tag: red
+      - Tag: default
         Name: Spherical
       - Tag: default
         Name: Discrete

@@ -15,8 +15,8 @@ Repository:
   - Name: exoplanet-dev/celerite2
     URL: https://github.com/exoplanet-dev/celerite2
 Version:
-  - Name: v0.3.2
-    URL: https://github.com/exoplanet-dev/celerite2/releases/tag/v0.3.2
+  - Name: v0.3.3
+    URL: https://github.com/exoplanet-dev/celerite2/releases/tag/v0.3.3
 Installation:
   - null
 Developer:

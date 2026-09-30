@@ -3,7 +3,7 @@ Library:
   - Name: PyKrige
     URL: https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/
     Reference:
-      - Author: "M\xFCller et al. (2022)"
+      - Author: "Müller et al. (2022)"
         URL: https://gmd.copernicus.org/articles/15/3161/2022/
 Language:
   - Python
@@ -14,8 +14,8 @@ Repository:
   - Name: GeoStat-Framework/PyKrige
     URL: https://github.com/GeoStat-Framework/PyKrige
 Version:
-  - Name: v1.7.2
-    URL: https://github.com/GeoStat-Framework/PyKrige/releases/tag/v1.7.2
+  - Name: v1.7.3
+    URL: https://github.com/GeoStat-Framework/PyKrige/releases/tag/v1.7.3
 Installation:
   - null
 Developer:

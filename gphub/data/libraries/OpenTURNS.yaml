@@ -15,8 +15,8 @@ Repository:
   - Name: openturns/openturns
     URL: https://github.com/openturns/openturns
 Version:
-  - Name: v1.24
-    URL: https://github.com/openturns/openturns/releases/tag/v1.24
+  - Name: v1.26
+    URL: https://github.com/openturns/openturns/releases/tag/v1.26
 Installation:
   - PyPI
   - conda
@@ -82,7 +82,7 @@ Correlation:
       - Tag: yellow
         Name: Matern
       - Tag: default
-        Name: Kroenecker
+        Name: Kronecker
       - Tag: default
         Name: Rank-M
       - Tag: default
@@ -121,7 +121,7 @@ OptimizationMethods:
       - Tag: default
         Name: NLopt
       - Tag: green
-        Name: Cobyla
+        Name: COBYLA
       - Tag: yellow
         Name: L-BFGS-B
       - Tag: teal

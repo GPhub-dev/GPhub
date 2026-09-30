@@ -1,0 +1,119 @@
+PackageID: itergp
+Library:
+  - Name: IterGP
+    URL: https://itergp.readthedocs.io
+    Reference:
+      - Author: Wenger et al. (2022)
+        URL: https://arxiv.org/abs/2205.15449
+Language:
+  - Python
+License:
+  - Name: MIT
+    URL: https://github.com/JonathanWenger/itergp/blob/main/LICENSE
+Repository:
+  - Name: JonathanWenger/itergp
+    URL: https://github.com/JonathanWenger/itergp
+Version:
+  - Name: main (2023-04-12)
+    URL: https://github.com/JonathanWenger/itergp/commits/main
+Installation:
+  - null
+Developer:
+  - Tag: red
+    Name: University of Tübingen
+    URL: https://uni-tuebingen.de/en/
+  - Tag: blue
+    Name: Columbia University
+    URL: https://www.columbia.edu
+  - Tag: purple
+    Name: Max Planck Institute for Intelligent Systems
+    URL: https://is.mpg.de
+  - Tag: default
+    Name: IterGP contributors
+    URL: https://github.com/JonathanWenger/itergp/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://itergp.readthedocs.io/en/latest/
+  - Name: tutorials
+    URL: https://itergp.readthedocs.io/en/latest/tutorials.html
+  - Name: API
+    URL: https://itergp.readthedocs.io/en/latest/api.html
+  - Name: jupyter notebooks
+    URL: https://github.com/JonathanWenger/itergp/tree/main/docs/source/tutorials
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: default
+        Name: Computation-aware Gaussian Process (IterGP)
+      - Tag: default
+        Name: IterGP-Cholesky
+      - Tag: default
+        Name: IterGP-CG (Conjugate Gradient)
+      - Tag: default
+        Name: IterGP-PI (Pseudo-Input / Inducing Points)
+      - Tag: default
+        Name: Auto-Preconditioned Conjugate Gradient
+      - Tag: default
+        Name: Projected Bayes Regressor
+      - Tag: default
+        Name: Mixed Strategy
+    URL: https://itergp.readthedocs.io/en/latest/api.html
+Complexity:
+  - O(N^2)
+Trend:
+  - Types:
+      - Tag: blue
+        Name: Zero
+      - Tag: default
+        Name: Custom
+    URL: https://itergp.readthedocs.io/en/latest/tutorials/quickstart.html
+LengthScale:
+  - Isotropic
+Correlation:
+  - Types:
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: yellow
+        Name: Matern
+      - Tag: default
+        Name: White noise
+    URL: https://github.com/JonathanWenger/itergp/blob/main/src/itergp/kernels/__init__.py
+Mixture: true
+MixtureModels:
+  - Types:
+      - Tag: red
+        Name: Sum
+      - Tag: teal
+        Name: Scale
+    URL: https://github.com/JonathanWenger/itergp/blob/main/src/itergp/kernels/__init__.py
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+    URL: https://itergp.readthedocs.io/en/latest/tutorials/quickstart.html
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: null
+        Name: null
+EstimationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Resampling: false
+Metrics:
+  - null

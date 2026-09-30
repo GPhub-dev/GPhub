@@ -1,0 +1,206 @@
+PackageID: BayesNewton
+Library:
+  - Name: Bayes-Newton
+    URL: https://github.com/AaltoML/BayesNewton
+    Reference:
+      - Author: Wilkinson et al. (2023)
+        URL: https://jmlr.org/papers/v24/21-1298.html
+Language:
+  - Python
+License:
+  - Name: Apache-2.0
+    URL: https://github.com/AaltoML/BayesNewton/blob/main/LICENSE
+Repository:
+  - Name: AaltoML/BayesNewton
+    URL: https://github.com/AaltoML/BayesNewton
+Version:
+  - Name: v1.3.4
+    URL: https://github.com/AaltoML/BayesNewton/releases/tag/v1.3.4
+Installation:
+  - PyPI
+Developer:
+  - Tag: default
+    Name: Aalto University
+    URL: https://www.aalto.fi/en
+  - Tag: default
+    Name: Bayes-Newton contributors
+    URL: https://github.com/AaltoML/BayesNewton/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://github.com/AaltoML/BayesNewton/blob/main/README.md
+  - Name: examples
+    URL: https://github.com/AaltoML/BayesNewton/tree/main/demos
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - JAX
+GPU: true
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: orange
+        Name: Gaussian Process Classification (GPC)
+      - Tag: teal
+        Name: Variational Gaussian Process (VGP)
+      - Tag: green
+        Name: Sparse Variational Gaussian Process (SVGP)
+      - Tag: default
+        Name: Markov (State Space) Gaussian Process
+      - Tag: default
+        Name: Sparse Markov Gaussian Process
+      - Tag: default
+        Name: Spatio-Temporal Gaussian Process
+      - Tag: default
+        Name: Expectation Propagation GP
+      - Tag: default
+        Name: Laplace / Newton GP
+      - Tag: default
+        Name: Posterior Linearisation GP
+      - Tag: default
+        Name: Taylor / Extended Kalman Smoother GP
+      - Tag: default
+        Name: Gauss-Newton GP
+      - Tag: default
+        Name: Quasi-Newton GP
+      - Tag: default
+        Name: Riemannian Gradient GP
+      - Tag: default
+        Name: Infinite Horizon GP
+      - Tag: default
+        Name: Parallel Markov GP
+      - Tag: red
+        Name: Multi-output Gaussian Process (MOGP)
+    URL: https://github.com/AaltoML/BayesNewton#implemented-models
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+LengthScale:
+  - Isotropic
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: yellow
+        Name: Matern12
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+      - Tag: yellow
+        Name: Matern72
+      - Tag: default
+        Name: Spatio-Temporal Matern
+      - Tag: green
+        Name: Cosine
+      - Tag: green
+        Name: Periodic
+      - Tag: default
+        Name: Quasi-Periodic Matern
+      - Tag: default
+        Name: Subband Matern
+      - Tag: default
+        Name: Spectro-Temporal
+      - Tag: default
+        Name: Latent Exponentially Generated
+      - Tag: default
+        Name: Divergence-Free Oscillator
+      - Tag: default
+        Name: Independent
+    URL: https://github.com/AaltoML/BayesNewton/blob/main/bayesnewton/kernels.py
+Mixture: true
+MixtureModels:
+  - Types:
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+    URL: https://github.com/AaltoML/BayesNewton/blob/main/bayesnewton/kernels.py
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+      - Tag: orange
+        Name: Bernoulli
+      - Tag: green
+        Name: Poisson
+      - Tag: teal
+        Name: Student-T
+      - Tag: yellow
+        Name: Beta
+      - Tag: yellow
+        Name: Gamma
+      - Tag: default
+        Name: Negative Binomial
+      - Tag: default
+        Name: Zero-Inflated Negative Binomial
+      - Tag: default
+        Name: Heteroskedastic Noise
+      - Tag: default
+        Name: Heteroskedastic Student-T
+      - Tag: default
+        Name: Positive
+      - Tag: default
+        Name: Positive Student-T
+      - Tag: default
+        Name: Gaussian Multivariate
+      - Tag: default
+        Name: Student-T Multivariate
+      - Tag: default
+        Name: Softmax
+      - Tag: default
+        Name: Multi-Stage
+      - Tag: default
+        Name: Nonnegative Matrix Factorisation
+      - Tag: default
+        Name: Audio Amplitude Demodulation
+      - Tag: default
+        Name: Linear Coregionalisation
+      - Tag: default
+        Name: Regression Network
+    URL: https://github.com/AaltoML/BayesNewton/blob/main/bayesnewton/likelihoods.py
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: teal
+        Name: Variational Inference (VI)
+      - Tag: red
+        Name: Evidence Lower Bound (ELBO)
+      - Tag: default
+        Name: Expectation Propagation (EP)
+      - Tag: default
+        Name: Power Expectation Propagation (PEP)
+      - Tag: purple
+        Name: Laplace Approximation (LA)
+      - Tag: default
+        Name: Newton's Method
+      - Tag: default
+        Name: Posterior Linearisation (PL)
+      - Tag: default
+        Name: Taylor Expansion / Analytical Linearisation
+      - Tag: default
+        Name: Gauss-Newton
+      - Tag: default
+        Name: Quasi-Newton
+      - Tag: default
+        Name: Riemannian Gradients
+    URL: https://github.com/AaltoML/BayesNewton/blob/main/bayesnewton/inference.py
+OptimizationMethods:
+  - Types:
+      - Tag: orange
+        Name: Adam
+    URL: https://github.com/AaltoML/BayesNewton#simple-example
+Resampling: false
+Metrics:
+  - NLPD

@@ -18,8 +18,8 @@ Repository:
   - Name: libKriging/libKriging
     URL: https://github.com/libKriging/libKriging
 Version:
-  - Name: v0.9.1
-    URL: https://github.com/libKriging/libKriging/releases/tag/v0.9.1
+  - Name: v1.2.2
+    URL: https://github.com/libKriging/libKriging/releases/tag/v1.2.2
 Installation:
   - null
 Developer:
@@ -36,8 +36,8 @@ Docs:
   - Name: colab notebooks
     URL: https://libkriging.readthedocs.io/en/latest/usage.html#basic-demo
 Support:
-  - Name: null
-    URL: null
+  - Name: GitHub discussions
+    URL: https://github.com/libKriging/libKriging/discussions
 Framework:
   - null
 GPU: false

@@ -1,2 +1,2 @@
 run:
-	@python3 ./gphub/utils/table/table_html_generator.py
+	@python3 ./gphub/utils/table/build_table_html.py

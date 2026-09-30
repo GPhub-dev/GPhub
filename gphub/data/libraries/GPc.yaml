@@ -1,0 +1,134 @@
+PackageID: GPc
+Library:
+  - Name: GPc
+    URL: https://github.com/SheffieldML/GPc
+    Reference:
+      - Author: SheffieldML (2014)
+        URL: https://github.com/SheffieldML/GPc
+Language:
+  - C++
+License:
+  - Name: MIT
+    URL: https://github.com/SheffieldML/GPc/blob/master/LICENSE
+Repository:
+  - Name: SheffieldML/GPc
+    URL: https://github.com/SheffieldML/GPc
+Version:
+  - Name: master (2021-09-16)
+    URL: https://github.com/SheffieldML/GPc/commits/master
+Installation:
+  - null
+Developer:
+  - Tag: purple
+    Name: University of Sheffield
+    URL: https://www.sheffield.ac.uk/dcs/research/groups/machine-learning
+  - Tag: default
+    Name: GPc contributors
+    URL: https://github.com/SheffieldML/GPc/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://github.com/SheffieldML/GPc/blob/master/README.md
+  - Name: examples
+    URL: https://github.com/SheffieldML/GPc/tree/master/examples
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: orange
+        Name: Gaussian Process Classification (GPC)
+      - Tag: green
+        Name: Sparse Gaussian Process Regression (SGPR)
+      - Tag: default
+        Name: Informative Vector Machine (IVM)
+      - Tag: orange
+        Name: Gaussian Process Latent Variable Model (GPLVM)
+      - Tag: default
+        Name: Back constrained Gaussian Process Latent Variable Model (BCGPLVM)
+      - Tag: default
+        Name: Gaussian Process Dynamical Model (GPDM)
+    URL: https://github.com/SheffieldML/GPc/blob/master/README.md
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+LengthScale:
+  - Isotropic
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: teal
+        Name: Exponential
+      - Tag: red
+        Name: Rational Quadratic
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+      - Tag: green
+        Name: Linear
+      - Tag: teal
+        Name: Polynomial
+      - Tag: default
+        Name: MLP
+      - Tag: default
+        Name: Bias
+      - Tag: default
+        Name: White noise
+    URL: https://github.com/SheffieldML/GPc/blob/master/CKern.h
+Mixture: true
+MixtureModels:
+  - Types:
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+    URL: https://github.com/SheffieldML/GPc/blob/master/CKern.h
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+      - Tag: default
+        Name: Probit
+      - Tag: default
+        Name: Ordered Categorical
+      - Tag: default
+        Name: Null Category Noise Model (NCNM)
+    URL: https://github.com/SheffieldML/GPc/blob/master/CNoise.h
+    Nugget:
+      - Tag: yellow
+        Name: Inferable
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: uiBlue
+        Name: Deterministic Training Conditional (DTC)
+      - Tag: teal
+        Name: Variational Free Energy (VFE)
+    URL: https://github.com/SheffieldML/GPc/blob/master/gp.cpp
+OptimizationMethods:
+  - Types:
+      - Tag: default
+        Name: Scaled Conjugate Gradient (SCG)
+      - Tag: orange
+        Name: Conjugate Gradient (CG)
+      - Tag: default
+        Name: Gradient Descent
+    URL: https://github.com/SheffieldML/GPc/blob/master/gp.cpp
+Resampling: false
+Metrics:
+  - null

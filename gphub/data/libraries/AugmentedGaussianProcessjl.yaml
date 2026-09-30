@@ -1,0 +1,209 @@
+PackageID: AugmentedGaussianProcessjl
+Library:
+  - Name: AugmentedGaussianProcesses.jl
+    URL: https://theogf.dev/AugmentedGaussianProcesses.jl/stable/
+    Reference:
+      - Author: Galy-Fajou et al. (2020)
+        URL: https://proceedings.mlr.press/v108/galy-fajou20a.html
+Language:
+  - Julia
+License:
+  - Name: MIT
+    URL: https://github.com/theogf/AugmentedGaussianProcesses.jl/blob/master/LICENSE.md
+Repository:
+  - Name: theogf/AugmentedGaussianProcesses.jl
+    URL: https://github.com/theogf/AugmentedGaussianProcesses.jl
+Version:
+  - Name: v0.11.5
+    URL: https://github.com/theogf/AugmentedGaussianProcesses.jl/releases/tag/v0.11.5
+Installation:
+  - Pkg.jl
+Developer:
+  - Tag: red
+    Name: Technische Universität Berlin
+    URL: https://www.tu.berlin/
+  - Tag: default
+    Name: AugmentedGaussianProcesses.jl contributors
+    URL: https://github.com/theogf/AugmentedGaussianProcesses.jl/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://theogf.dev/AugmentedGaussianProcesses.jl/stable/
+  - Name: user manuals
+    URL: https://theogf.dev/AugmentedGaussianProcesses.jl/dev/userguide/
+  - Name: API
+    URL: https://theogf.dev/AugmentedGaussianProcesses.jl/dev/api/
+  - Name: examples
+    URL: https://theogf.dev/AugmentedGaussianProcesses.jl/dev/examples/gpregression/
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: orange
+        Name: Gaussian Process Classification (GPC)
+      - Tag: teal
+        Name: Variational Gaussian Process (VGP)
+      - Tag: green
+        Name: Sparse Variational Gaussian Process (SVGP)
+      - Tag: blue
+        Name: Gaussian Process Markov Chain Monte Carlo (GPMC)
+      - Tag: default
+        Name: Online Sparse Variational Gaussian Process (OnlineSVGP)
+      - Tag: red
+        Name: Multi-output Gaussian Process (MOGP)
+      - Tag: default
+        Name: Variational Student-T Process (VStP)
+    URL: https://theogf.dev/AugmentedGaussianProcesses.jl/dev/userguide/
+Complexity:
+  - O(N^3)
+  - O(M^3)
+Trend:
+  - Types:
+      - Tag: blue
+        Name: Zero
+      - Tag: orange
+        Name: Constant
+      - Tag: default
+        Name: Empirical
+      - Tag: green
+        Name: Linear
+    URL: https://theogf.dev/AugmentedGaussianProcesses.jl/dev/userguide/
+LengthScale:
+  - Isotropic
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: teal
+        Name: Exponential
+      - Tag: default
+        Name: Gamma Exponential
+      - Tag: yellow
+        Name: Matern
+      - Tag: yellow
+        Name: Matern12
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+      - Tag: red
+        Name: Rational Quadratic
+      - Tag: default
+        Name: Rational
+      - Tag: default
+        Name: Gamma Rational
+      - Tag: green
+        Name: Linear
+      - Tag: teal
+        Name: Polynomial
+      - Tag: teal
+        Name: Piecewise Polynomial
+      - Tag: green
+        Name: Periodic
+      - Tag: green
+        Name: Cosine
+      - Tag: orange
+        Name: Constant
+      - Tag: default
+        Name: White noise
+      - Tag: default
+        Name: Exponentiated
+      - Tag: default
+        Name: Fractional Brownian Motion
+      - Tag: default
+        Name: Gabor
+      - Tag: default
+        Name: Gibbs
+      - Tag: default
+        Name: Neural Network
+      - Tag: default
+        Name: Wiener
+      - Tag: default
+        Name: Spectral Mixture
+      - Tag: default
+        Name: Independent Multi-output
+      - Tag: default
+        Name: Intrinsic Coregionalization
+      - Tag: default
+        Name: Latent Factor
+      - Tag: default
+        Name: Linear Mixing Model
+    URL: https://juliagaussianprocesses.github.io/KernelFunctions.jl/stable/kernels/
+Mixture: true
+MixtureModels:
+  - Types:
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+      - Tag: teal
+        Name: Scale
+      - Tag: default
+        Name: Tensor Product
+    URL: https://juliagaussianprocesses.github.io/KernelFunctions.jl/stable/kernels/
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+      - Tag: teal
+        Name: Student-T
+      - Tag: purple
+        Name: Laplace
+      - Tag: default
+        Name: Heteroskedastic Noise
+      - Tag: orange
+        Name: Bernoulli
+      - Tag: default
+        Name: Bayesian SVM
+      - Tag: green
+        Name: Poisson
+      - Tag: default
+        Name: Negative Binomial
+      - Tag: default
+        Name: Softmax
+      - Tag: default
+        Name: Logistic-Softmax
+    URL: https://theogf.dev/AugmentedGaussianProcesses.jl/dev/userguide/
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: default
+        Name: Exact inference
+      - Tag: teal
+        Name: Variational Inference (VI)
+      - Tag: teal
+        Name: Stochastic Variational Inference (SVI)
+      - Tag: red
+        Name: Evidence Lower Bound (ELBO)
+      - Tag: default
+        Name: Markov Chain Monte Carlo (MCMC)
+    URL: https://theogf.dev/AugmentedGaussianProcesses.jl/dev/userguide/
+OptimizationMethods:
+  - Types:
+      - Tag: purple
+        Name: Flux.jl optimizer
+      - Tag: orange
+        Name: Adam
+      - Tag: default
+        Name: Gradient Descent
+      - Tag: default
+        Name: Momentum
+      - Tag: default
+        Name: Robbins-Monro
+      - Tag: default
+        Name: Natural Gradient Descent (NGD)
+    URL: https://theogf.dev/AugmentedGaussianProcesses.jl/dev/userguide/
+Resampling: false
+Metrics:
+  - null

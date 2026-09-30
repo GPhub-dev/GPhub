@@ -1,7 +1,7 @@
 PackageID: egobox
 Library:
   - Name: egobox-gp
-    URL: https://github.com/relf/egobox/tree/master/gp
+    URL: https://github.com/relf/egobox/tree/master/crates/gp
     Reference:
       - Author: Lafage (2022)
         URL: https://joss.theoj.org/papers/10.21105/joss.04737
@@ -15,8 +15,8 @@ Repository:
   - Name: relf/egobox
     URL: https://github.com/relf/egobox
 Version:
-  - Name: 0.29.0
-    URL: https://github.com/relf/egobox/releases/tag/0.29.0
+  - Name: 0.37.9
+    URL: https://github.com/relf/EGObox/releases/tag/0.37.9
 Installation:
   - cargo
   - PyPI
@@ -42,7 +42,7 @@ GPU: false
 Models:
   - Types:
       - Tag: blue
-        Name: Gaussian Processes Regression (GPR)
+        Name: Gaussian Process Regression (GPR)
       - Tag: green
         Name: Sparse Gaussian Process Regression (SGPR)
     URL: null
@@ -57,7 +57,7 @@ Trend:
         Name: Linear
       - Tag: red
         Name: Quadratic
-    URL: https://github.com/relf/egobox/tree/master/gp#current-state
+    URL: https://github.com/relf/egobox/tree/master/crates/gp
 LengthScale:
   - Isotropic
   - Anisotropic
@@ -99,11 +99,11 @@ EstimationMethods:
 OptimizationMethods:
   - Types:
       - Tag: green
-        Name: Cobyla
+        Name: COBYLA
       - Tag: default
         Name: SLSQP
     URL: null
 Resampling: true
 Metrics:
   - LOOCV
-  - Cross-Validation score
+  - CV

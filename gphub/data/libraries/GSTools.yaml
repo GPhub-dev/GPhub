@@ -3,7 +3,7 @@ Library:
   - Name: GSTools
     URL: https://geostat-framework.org
     Reference:
-      - Author: "M\xFCller et al. (2022)"
+      - Author: "Müller et al. (2022)"
         URL: https://gmd.copernicus.org/articles/15/3161/2022/
 Language:
   - Python

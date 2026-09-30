@@ -7,3 +7,8 @@
 __pycache__/
 
 **/.venv
+
+# Hugo build output and cache
+gphub/public/
+gphub/resources/
+gphub/.hugo_build.lock

@@ -14,8 +14,8 @@ Repository:
   - Name: STOR-i/GaussianProcesses.jl
     URL: https://github.com/STOR-i/GaussianProcesses.jl
 Version:
-  - Name: v0.12.5
-    URL: https://github.com/STOR-i/GaussianProcesses.jl/releases/tag/v0.12.5
+  - Name: v0.12.6
+    URL: https://github.com/STOR-i/GaussianProcesses.jl/releases/tag/v0.12.6
 Installation:
   - Pkg.jl
 Developer:
@@ -66,7 +66,7 @@ Trend:
         Name: Polynomial
       - Tag: red
         Name: Sum
-      - Tag: green
+      - Tag: default
         Name: Product
       - Tag: default
         Name: Custom
@@ -94,8 +94,6 @@ Correlation:
         Name: Fixed
       - Tag: default
         Name: Masked
-      - Tag: default
-        Name: null
     URL: null
 Mixture: true
 MixtureModels:
@@ -132,8 +130,8 @@ EstimationMethods:
         Name: Maximum Likelihood Estimation (MLE)
       - Tag: default
         Name: Markov Chain Monte Carlo (MCMC)
-      - Tag: default
-        Name: Variational Inference
+      - Tag: teal
+        Name: Variational Inference (VI)
       - Tag: uiBlue
         Name: Fully Independent Training Conditional (FITC)
       - Tag: uiBlue
@@ -150,7 +148,7 @@ OptimizationMethods:
       - Tag: yellow
         Name: L-BFGS
       - Tag: orange
-        Name: Conjugate gradients
+        Name: Conjugate Gradient (CG)
     URL: null
 Resampling: true
 Metrics:

@@ -14,8 +14,8 @@ Repository:
   - Name: scikit-learn/scikit-learn
     URL: https://github.com/scikit-learn/scikit-learn
 Version:
-  - Name: 1.6.1
-    URL: https://github.com/scikit-learn/scikit-learn/releases/tag/1.6.1
+  - Name: 1.9.1
+    URL: https://github.com/scikit-learn/scikit-learn/releases/tag/1.9.1
 Installation:
   - PyPI
   - conda
@@ -47,7 +47,7 @@ Docs:
   - Name: examples
     URL: https://scikit-learn.org/stable/auto_examples/index.html#gaussian-process-for-machine-learning
   - Name: tutorials
-    URL: https://scikit-learn.org/stable/tutorial/index.html
+    URL: https://scikit-learn.org/stable/getting_started.html
   - Name: API
     URL: https://scikit-learn.org/stable/modules/classes.html
 Support:
@@ -85,13 +85,13 @@ Correlation:
       - Tag: orange
         Name: Constant
       - Tag: default
-        Name: Dot-Product
+        Name: Dot Product
       - Tag: blue
         Name: Squared Exponential
       - Tag: red
         Name: Rational Quadratic
       - Tag: default
-        Name: White
+        Name: White noise
     URL: https://scikit-learn.org/dev/modules/generated/sklearn.gaussian_process.GaussianProcessRegressor.html
 Mixture: true
 MixtureModels:
@@ -132,9 +132,9 @@ EstimationMethods:
 OptimizationMethods:
   - Types:
       - Tag: yellow
-        Name: L-BFGSB
+        Name: L-BFGS-B
       - Tag: blue
-        Name: SciPy Optimizer
+        Name: SciPy optimizer
     URL: null
 Resampling: true
 Metrics:

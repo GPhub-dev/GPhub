@@ -1,0 +1,91 @@
+PackageID: GPEXP
+Library:
+  - Name: GPEXP
+    URL: https://github.com/goroda/GPEXP
+    Reference:
+      - Author: Gorodetsky et al. (2016)
+        URL: https://doi.org/10.1137/15m1017119
+Language:
+  - Python
+License:
+  - Name: GPL-2.0
+    URL: https://github.com/goroda/GPEXP/blob/master/LICENSE
+Repository:
+  - Name: goroda/GPEXP
+    URL: https://github.com/goroda/GPEXP
+Version:
+  - Name: pre-refactor
+    URL: https://github.com/goroda/GPEXP/releases/tag/pre-refactor
+Installation:
+  - null
+Developer:
+  - Tag: red
+    Name: Massachusetts Institute of Technology
+    URL: https://www.mit.edu/
+  - Tag: default
+    Name: GPEXP contributors
+    URL: https://github.com/goroda/GPEXP/graphs/contributors
+Docs:
+  - Name: examples
+    URL: https://github.com/goroda/GPEXP/blob/master/demo.py
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - NumPy
+  - SciPy
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+    URL: https://github.com/goroda/GPEXP#readme
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+LengthScale:
+  - Isotropic
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: yellow
+        Name: Matern
+      - Tag: default
+        Name: Mehler
+    URL: https://github.com/goroda/GPEXP#multidimensional-kernels
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: null
+        Name: null
+EstimationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+OptimizationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Resampling: false
+Metrics:
+  - null

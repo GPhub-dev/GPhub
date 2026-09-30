@@ -1,0 +1,154 @@
+PackageID: GPmat
+Library:
+  - Name: GPmat
+    URL: https://github.com/SheffieldML/GPmat
+    Reference:
+      - Author: SheffieldML (2013)
+        URL: https://github.com/SheffieldML/GPmat
+Language:
+  - Matlab
+License:
+  - Name: BSD-3-Clause
+    URL: https://github.com/SheffieldML/GPmat/blob/master/LICENSE.txt
+Repository:
+  - Name: SheffieldML/GPmat
+    URL: https://github.com/SheffieldML/GPmat
+Version:
+  - Name: v1.0.0
+    URL: https://github.com/SheffieldML/GPmat/releases/tag/v1.0.0
+Installation:
+  - matlab
+Developer:
+  - Tag: purple
+    Name: University of Sheffield
+    URL: https://www.sheffield.ac.uk/dcs/research/groups/machine-learning
+  - Tag: default
+    Name: GPmat contributors
+    URL: https://github.com/SheffieldML/GPmat/blob/master/AUTHORS.txt
+Docs:
+  - Name: docs
+    URL: https://github.com/SheffieldML/GPmat/blob/master/README.md
+  - Name: examples
+    URL: https://github.com/SheffieldML/GPmat/blob/master/gp/README.md
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: orange
+        Name: Gaussian Process Classification (GPC)
+      - Tag: green
+        Name: Sparse Gaussian Process Regression (SGPR)
+      - Tag: default
+        Name: Informative Vector Machine (IVM)
+      - Tag: orange
+        Name: Gaussian Process Latent Variable Model (GPLVM)
+      - Tag: default
+        Name: Back constrained Gaussian Process Latent Variable Model (BCGPLVM)
+      - Tag: default
+        Name: Hierarchical Gaussian Process Latent Variable Model (HGPLVM)
+      - Tag: default
+        Name: Gaussian Process Dynamical Model (GPDM)
+    URL: https://github.com/SheffieldML/GPmat/blob/master/README.md
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: blue
+        Name: Zero
+      - Tag: default
+        Name: Custom
+    URL: https://github.com/SheffieldML/GPmat/blob/master/gp/gpOptions.m
+LengthScale:
+  - Isotropic
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: blue
+        Name: Gaussian
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+      - Tag: red
+        Name: Rational Quadratic
+      - Tag: green
+        Name: Linear
+      - Tag: teal
+        Name: Polynomial
+      - Tag: green
+        Name: Periodic
+      - Tag: default
+        Name: Gibbs
+      - Tag: default
+        Name: MLP
+      - Tag: default
+        Name: Ornstein-Uhlenbeck (OU)
+      - Tag: default
+        Name: Wiener
+      - Tag: default
+        Name: Single Input Motif (SIM)
+      - Tag: default
+        Name: Latent Force Model (LFM)
+      - Tag: default
+        Name: Bias
+      - Tag: default
+        Name: White noise
+    URL: https://github.com/SheffieldML/GPmat/blob/master/kern/README.md
+Mixture: true
+MixtureModels:
+  - Types:
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+    URL: https://github.com/SheffieldML/GPmat/blob/master/kern/README.md
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+      - Tag: default
+        Name: Probit
+      - Tag: default
+        Name: Ordered Categorical
+      - Tag: default
+        Name: Null Category Noise Model (NCNM)
+    URL: https://github.com/SheffieldML/GPmat/blob/master/noise/README.md
+    Nugget:
+      - Tag: yellow
+        Name: Inferable
+      - Tag: red
+        Name: Fixed Non-Trainable
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: uiBlue
+        Name: Deterministic Training Conditional (DTC)
+      - Tag: uiBlue
+        Name: Fully Independent Training Conditional (FITC)
+      - Tag: uiBlue
+        Name: Partially Independent Training Conditional (PITC)
+      - Tag: teal
+        Name: Variational Free Energy (VFE)
+    URL: https://github.com/SheffieldML/GPmat/blob/master/README.md
+OptimizationMethods:
+  - Types:
+      - Tag: default
+        Name: Scaled Conjugate Gradient (SCG)
+      - Tag: orange
+        Name: Conjugate Gradient (CG)
+    URL: https://github.com/SheffieldML/GPmat/blob/master/optimi/README.md
+Resampling: false
+Metrics:
+  - null

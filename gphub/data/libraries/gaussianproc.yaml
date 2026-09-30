@@ -1,30 +1,30 @@
 PackageID: gaussianproc
 Library:
   - Name: gaussianproc
-    URL: null
+    URL: https://pkg.go.dev/github.com/RobinRCM/sklearn/gaussian_process
     Reference:
-      - Author: null
-        URL: null
+      - Author: RobinRCM (2020)
+        URL: https://github.com/RobinRCM/sklearn
 Language:
   - GO
 License:
-  - Name: null
-    URL: null
+  - Name: MIT
+    URL: https://github.com/RobinRCM/sklearn/blob/master/LICENSE
 Repository:
-  - Name: null
-    URL: null
+  - Name: RobinRCM/sklearn
+    URL: https://github.com/RobinRCM/sklearn
 Version:
   - Name: v0
     URL: https://pkg.go.dev/github.com/RobinRCM/sklearn/gaussian_process?tab=versions
 Installation:
   - null
 Developer:
-  - Tag: null
-    Name: null
-    URL: null
+  - Tag: default
+    Name: RobinRCM
+    URL: https://github.com/RobinRCM
 Docs:
-  - Name: null
-    URL: null
+  - Name: docs
+    URL: https://pkg.go.dev/github.com/RobinRCM/sklearn/gaussian_process
 Support:
   - Name: null
     URL: null

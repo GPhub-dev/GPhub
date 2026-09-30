@@ -1,0 +1,89 @@
+PackageID: BayesianOptimizationjl
+Library:
+  - Name: BayesianOptimization.jl
+    URL: https://github.com/jbrea/BayesianOptimization.jl
+    Reference:
+      - Author: jbrea (2018)
+        URL: https://github.com/jbrea/BayesianOptimization.jl
+Language:
+  - Julia
+License:
+  - Name: MIT
+    URL: https://github.com/jbrea/BayesianOptimization.jl/blob/master/LICENSE.md
+Repository:
+  - Name: jbrea/BayesianOptimization.jl
+    URL: https://github.com/jbrea/BayesianOptimization.jl
+Version:
+  - Name: v0.2.5
+    URL: https://github.com/jbrea/BayesianOptimization.jl/releases/tag/v0.2.5
+Installation:
+  - Pkg.jl
+Developer:
+  - Tag: red
+    Name: EPFL
+    URL: https://www.epfl.ch/en/
+  - Tag: default
+    Name: BayesianOptimization.jl contributors
+    URL: https://github.com/jbrea/BayesianOptimization.jl/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://github.com/jbrea/BayesianOptimization.jl/blob/master/README.md
+Support:
+  - Name: null
+    URL: null
+Framework:
+  - null
+GPU: false
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: default
+        Name: Elastic Gaussian Process (ElasticGPE)
+    URL: https://github.com/jbrea/BayesianOptimization.jl/blob/master/README.md
+Complexity:
+  - null
+Trend:
+  - Types:
+      - Tag: orange
+        Name: Constant
+    URL: https://github.com/jbrea/BayesianOptimization.jl/blob/master/README.md
+LengthScale:
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: blue
+        Name: Squared Exponential
+    URL: https://github.com/jbrea/BayesianOptimization.jl/blob/master/README.md
+Mixture: false
+MixtureModels:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+    URL: https://github.com/jbrea/BayesianOptimization.jl/blob/master/README.md
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: default
+        Name: Maximum A Posteriori (MAP)
+    URL: https://github.com/jbrea/BayesianOptimization.jl/blob/master/README.md
+OptimizationMethods:
+  - Types:
+      - Tag: default
+        Name: NLopt
+      - Tag: yellow
+        Name: L-BFGS
+    URL: https://github.com/jbrea/BayesianOptimization.jl/blob/master/README.md
+Resampling: false
+Metrics:
+  - null

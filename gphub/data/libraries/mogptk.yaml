@@ -14,14 +14,14 @@ Repository:
   - Name: GAMES-UChile/mogptk
     URL: https://github.com/GAMES-UChile/mogptk
 Version:
-  - Name: v0.5.1
-    URL: https://github.com/GAMES-UChile/mogptk/releases/tag/v0.5.1
+  - Name: v0.5.3
+    URL: https://github.com/GAMES-UChile/mogptk/releases/tag/v0.5.3
 Installation:
   - null
 Developer:
   - Tag: purple
     Name: GAMES Universidad de Chile
-    URL: http://games.cmm.uchile.cl
+    URL: https://www.cmm.uchile.cl/
   - Tag: default
     Name: mogptk contributors
     URL: https://github.com/GAMES-UChile/mogptk/graphs/contributors

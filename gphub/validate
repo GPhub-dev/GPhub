@@ -1,0 +1,2 @@
+run:
+	@python3 ./utils/validate/validate_libraries.py

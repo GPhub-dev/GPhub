@@ -1,0 +1,50 @@
+name: Update library versions
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # every Monday, 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-versions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Refresh Version blocks from GitHub releases and tags
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./gphub/utils/releases/update_versions.sh
+
+      - name: Normalise YAML formatting with Prettier
+        run: npx --yes prettier@3 --write "gphub/data/libraries/*.yaml"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate library files
+        run: pip install pyyaml && python3 gphub/utils/validate/validate_libraries.py
+
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.166.0"
+
+      - name: Regenerate Table.html
+        run: python3 gphub/utils/table/build_table_html.py
+
+      - name: Open a pull request with the changes
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: chore/update-library-versions
+          delete-branch: true
+          title: "chore: update library versions"
+          commit-message: "chore: update library versions from GitHub releases"
+          body: |
+            Weekly refresh of `Version` from GitHub releases (fallback: newest tag),
+            with `Table.html` rebuilt. Review the diff before merging; merging
+            triggers a Netlify deploy.

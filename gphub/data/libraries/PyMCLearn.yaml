@@ -1,0 +1,110 @@
+PackageID: PyMCLearn
+Library:
+  - Name: pymc-learn
+    URL: https://pymc-learn.readthedocs.io/en/latest/
+    Reference:
+      - Author: Emaasit et al. (2018)
+        URL: https://arxiv.org/abs/1811.00542
+Language:
+  - Python
+License:
+  - Name: BSD-3-Clause
+    URL: https://github.com/pymc-learn/pymc-learn/blob/master/LICENSE
+Repository:
+  - Name: pymc-learn/pymc-learn
+    URL: https://github.com/pymc-learn/pymc-learn
+Version:
+  - Name: v0.0.1rc3
+    URL: https://github.com/pymc-learn/pymc-learn/releases/tag/v0.0.1rc3
+Installation:
+  - PyPI
+Developer:
+  - Tag: default
+    Name: pymc-learn contributors
+    URL: https://github.com/pymc-learn/pymc-learn/graphs/contributors
+Docs:
+  - Name: docs
+    URL: https://pymc-learn.readthedocs.io/en/latest/
+  - Name: user manuals
+    URL: https://pymc-learn.readthedocs.io/en/latest/user_guide.html
+  - Name: examples
+    URL: https://pymc-learn.readthedocs.io/en/latest/regression.html
+  - Name: API
+    URL: https://pymc-learn.readthedocs.io/en/latest/api.html
+  - Name: jupyter notebooks
+    URL: https://github.com/pymc-learn/pymc-learn/tree/master/docs/notebooks
+Support:
+  - Name: stackoverflow
+    URL: https://stackoverflow.com/questions/tagged/pymc-learn
+Framework:
+  - null
+GPU: true
+Models:
+  - Types:
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: green
+        Name: Sparse Gaussian Process Regression (SGPR)
+      - Tag: default
+        Name: Student-T Process Regression (STPR)
+    URL: https://pymc-learn.readthedocs.io/en/latest/api/pmlearn.gaussian_process.html
+Complexity:
+  - O(N^3)
+  - O(NM^2)
+Trend:
+  - Types:
+      - Tag: blue
+        Name: Zero
+      - Tag: orange
+        Name: Constant
+    URL: https://pymc-learn.readthedocs.io/en/latest/api/pmlearn.gaussian_process.html
+LengthScale:
+  - Isotropic
+  - Anisotropic
+Correlation:
+  - Types:
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: default
+        Name: Dot Product
+      - Tag: default
+        Name: White noise
+    URL: https://pymc-learn.readthedocs.io/en/latest/api/pmlearn.gaussian_process.html
+Mixture: true
+MixtureModels:
+  - Types:
+      - Tag: red
+        Name: Sum
+    URL: https://pymc-learn.readthedocs.io/en/latest/api/pmlearn.gaussian_process.html
+Likelihood:
+  - Types:
+      - Tag: blue
+        Name: Gaussian
+      - Tag: teal
+        Name: Student-T
+    URL: https://github.com/pymc-learn/pymc-learn/blob/master/pmlearn/gaussian_process/gpr.py
+    Nugget:
+      - Tag: null
+        Name: null
+    Noise:
+      - Tag: yellow
+        Name: Inferable
+EstimationMethods:
+  - Types:
+      - Tag: teal
+        Name: Variational Inference (VI)
+      - Tag: default
+        Name: Automatic Differentiation Variational Inference (ADVI)
+      - Tag: default
+        Name: Markov Chain Monte Carlo (MCMC)
+      - Tag: default
+        Name: No-U-Turn Sampler (NUTS)
+    URL: https://pymc-learn.readthedocs.io/en/latest/api/pmlearn.gaussian_process.html
+OptimizationMethods:
+  - Types:
+      - Tag: null
+        Name: null
+    URL: null
+Resampling: false
+Metrics:
+  - R2

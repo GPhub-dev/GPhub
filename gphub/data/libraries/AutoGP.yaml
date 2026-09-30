@@ -14,8 +14,8 @@ Repository:
   - Name: ebonilla/AutoGP
     URL: https://github.com/ebonilla/AutoGP
 Version:
-  - Name:
-    URL:
+  - Name: master (2019-07-19)
+    URL: https://github.com/ebonilla/AutoGP/commits/master
 Installation:
   - null
 Developer:
@@ -29,11 +29,11 @@ Developer:
     Name: AutoGP contributors
     URL: https://github.com/ebonilla/AutoGP/graphs/contributors
 Docs:
-  - Name:
-    URL:
+  - Name: docs
+    URL: https://github.com/ebonilla/AutoGP#readme
 Support:
-  - Name:
-    URL:
+  - Name: null
+    URL: null
 Framework:
   - null
 GPU: false

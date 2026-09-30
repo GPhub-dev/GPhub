@@ -12,7 +12,7 @@ License:
     URL: https://gitlab.com/radfordneal/fbm/-/blob/master/README?ref_type=heads
 Repository:
   - Name: radfordneal/fbm
-    URL: https://gitlab.com/radfordneal/fbm
+    URL: https://github.com/radfordneal/fbm
 Version:
   - Name: fbm.2022-04-21
     URL: https://github.com/radfordneal/fbm/releases/tag/fbm.2022-04-21
@@ -40,9 +40,9 @@ Complexity:
   - null
 Trend:
   - Types:
-      - Tag: default
+      - Tag: blue
         Name: Zero
-    URL: "https://glizen.com/radfordneal/fbm.2022-04-21.doc/gp.html "
+    URL: https://glizen.com/radfordneal/fbm.2022-04-21.doc/gp.html
 LengthScale:
   - null
 Correlation:
