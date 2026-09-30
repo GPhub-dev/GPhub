@@ -9,7 +9,7 @@
     <a href="https://app.netlify.com/projects/gphub-dev/deploys">
       <img src="https://api.netlify.com/api/v1/badges/e2d77aae-644c-46c7-842e-01e858e12506/deploy-status" alt="Netlify Status">
     </a>
-    <a href="https://github.com/alefaraci/GPhub/blob/main/LICENSE">
+    <a href="https://github.com/GPhub-dev/GPhub/blob/main/LICENSE">
       <img src="https://img.shields.io/github/license/alefaraci/GPhub?color=brightgreen" alt="License">
     </a>
 </p>    
