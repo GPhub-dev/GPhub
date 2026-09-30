@@ -15,7 +15,7 @@ Repository:
     URL: https://github.com/cran/deepgp
 Version:
   - Name: 1.2.3
-    URL: https://github.com/cran/deepgp/releases/tag/1.2.3
+    URL: https://cran.r-project.org/package=deepgp
 Installation:
   - null
 Developer:

@@ -15,7 +15,7 @@ Repository:
     URL: https://github.com/cran/gptk
 Version:
   - Name: "1.08"
-    URL: https://cran.r-project.org/src/contrib/Archive/gptk/
+    URL: https://cran.r-project.org/package=gptk
 Installation:
   - null
 Developer:

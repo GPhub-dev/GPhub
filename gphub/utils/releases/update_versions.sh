@@ -30,7 +30,14 @@ for f in data/libraries/*.yaml; do
     echo "::notice file=$f::repository $repo is archived"
   fi
 
-  if rel=$(gh api "repos/$repo/releases/latest" 2>/dev/null); then
+  if [[ "$repo" == cran/* ]]; then
+    # CRAN mirrors: GitHub tags are not chronological and may be R versions
+    # (R-3.0.3), so take the package version from CRAN itself.
+    pkg=${repo#cran/}
+    tag=$(curl -s --max-time 30 "https://crandb.r-pkg.org/$pkg" | jq -r '.Version // empty' 2>/dev/null || true)
+    if [ -z "$tag" ]; then echo "skip $name: CRAN lookup failed"; continue; fi
+    link="https://cran.r-project.org/package=$pkg"
+  elif rel=$(gh api "repos/$repo/releases/latest" 2>/dev/null); then
     tag=$(jq -r .tag_name <<<"$rel")
     link=$(jq -r .html_url <<<"$rel")
   else
