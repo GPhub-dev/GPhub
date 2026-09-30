@@ -21,7 +21,8 @@ Version:
   - Name: v1.2.2
     URL: https://github.com/libKriging/libKriging/releases/tag/v1.2.2
 Installation:
-  - null
+  - PyPI
+  - CRAN
 Developer:
   - Tag: default
     Name: libKriging contributors
@@ -43,23 +44,45 @@ Framework:
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: default
+        Name: Ordinary Kriging (OK)
+      - Tag: default
+        Name: Universal Kriging (UK)
+      - Tag: default
+        Name: Input-warped Kriging (WarpKriging)
+      - Tag: default
+        Name: Deep Kernel Learning (DKL)
+      - Tag: default
+        Name: Nested Kriging (NK / PoE / gPoE / BCM / rBCM)
+    URL: https://libkriging.readthedocs.io/en/latest/index.html
 Complexity:
-  - null
+  - O(N^3)
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: default
+        Name: Interactive
+      - Tag: red
+        Name: Quadratic
+    URL: https://libkriging.readthedocs.io/en/latest/functions/Kriging.html
 LengthScale:
-  - null
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+      - Tag: teal
+        Name: Exponential
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+    URL: https://libkriging.readthedocs.io/en/latest/math/kernel.html
 Mixture: false
 MixtureModels:
   - Types:
@@ -68,25 +91,37 @@ MixtureModels:
     URL: null
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+    URL: https://libkriging.readthedocs.io/en/latest/noise/index.html
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: green
+        Name: Leave-One-Out Cross-Validation (LOOCV)
+      - Tag: default
+        Name: Log-Marginal Posterior (LMP)
+      - Tag: default
+        Name: Vecchia approximated log-likelihood (LLVecchia)
+      - Tag: default
+        Name: Nystrom approximated log-likelihood (LLNystrom)
+    URL: https://libkriging.readthedocs.io/en/latest/functions/fit.Kriging.html
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Resampling: false
+      - Tag: yellow
+        Name: BFGS
+      - Tag: default
+        Name: Multi-start BFGS
+      - Tag: default
+        Name: Newton
+    URL: https://libkriging.readthedocs.io/en/latest/functions/fit.Kriging.html
+Resampling: true
 Metrics:
-  - null
+  - LOOCV

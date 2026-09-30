@@ -33,9 +33,15 @@ Framework:
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: orange
+        Name: Gaussian Process Classification (GPC)
+      - Tag: default
+        Name: Multi-class Classification (softmax)
+      - Tag: default
+        Name: Poisson Regression (count data)
+    URL: https://glizen.com/radfordneal/fbm.2022-04-21.doc/gp.html
 Complexity:
   - null
 Trend:
@@ -44,12 +50,23 @@ Trend:
         Name: Zero
     URL: https://glizen.com/radfordneal/fbm.2022-04-21.doc/gp.html
 LengthScale:
-  - null
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: teal
+        Name: Power Exponential
+      - Tag: default
+        Name: Cauchy (power -1)
+      - Tag: default
+        Name: White noise
+    URL: https://glizen.com/radfordneal/fbm.2022-04-21.doc/gp-spec.html
 Mixture: false
 MixtureModels:
   - Types:
@@ -58,20 +75,40 @@ MixtureModels:
     URL: null
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+      - Tag: teal
+        Name: Student-T
+      - Tag: default
+        Name: Logit
+      - Tag: default
+        Name: Softmax
+      - Tag: green
+        Name: Poisson
+    URL: https://glizen.com/radfordneal/fbm.2022-04-21.doc/model-spec.html
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: blue
+        Name: "default value: 0"
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
+      - Tag: red
+        Name: Fixed Non-Trainable
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: default
+        Name: Markov Chain Monte Carlo (MCMC)
+      - Tag: default
+        Name: Hamiltonian Monte Carlo (HMC)
+      - Tag: default
+        Name: Gibbs sampling
+      - Tag: default
+        Name: Metropolis-Hastings
+    URL: https://glizen.com/radfordneal/fbm.2022-04-21.doc/gp-mc.html
 OptimizationMethods:
   - Types:
       - Tag: null
@@ -79,4 +116,6 @@ OptimizationMethods:
     URL: null
 Resampling: false
 Metrics:
-  - null
+  - MSE
+  - MAE
+  - NLPD

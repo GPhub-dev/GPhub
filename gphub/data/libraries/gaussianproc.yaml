@@ -33,9 +33,9 @@ Framework:
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+    URL: https://pkg.go.dev/github.com/RobinRCM/sklearn/gaussian_process
 Complexity:
   - null
 Trend:
@@ -44,39 +44,50 @@ Trend:
         Name: null
     URL: null
 LengthScale:
-  - null
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Mixture: false
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: orange
+        Name: Constant
+      - Tag: default
+        Name: Dot Product
+      - Tag: default
+        Name: White noise
+    URL: https://pkg.go.dev/github.com/RobinRCM/sklearn/gaussian_process/kernels
+Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+      - Tag: orange
+        Name: Exponentiation
+    URL: https://pkg.go.dev/github.com/RobinRCM/sklearn/gaussian_process/kernels
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+    URL: https://pkg.go.dev/github.com/RobinRCM/sklearn/gaussian_process
     Nugget:
       - Tag: null
         Name: null
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+    URL: https://pkg.go.dev/github.com/RobinRCM/sklearn/gaussian_process
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Resampling: false
+      - Tag: yellow
+        Name: L-BFGS
+    URL: https://pkg.go.dev/github.com/RobinRCM/sklearn/gaussian_process
+Resampling: true
 Metrics:
-  - null
+  - R2

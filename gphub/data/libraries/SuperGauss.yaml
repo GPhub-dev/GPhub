@@ -17,7 +17,7 @@ Version:
   - Name: 2.0.4
     URL: https://cran.r-project.org/package=SuperGauss
 Installation:
-  - null
+  - CRAN
 Developer:
   - Tag: yellow
     Name: University of Waterloo
@@ -38,23 +38,32 @@ Framework:
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: default
+        Name: Stationary Gaussian Time Series (Toeplitz likelihood)
+    URL: https://rdrr.io/cran/SuperGauss/man/SuperGauss-package.html
 Complexity:
-  - null
+  - O(N^2)
+  - O(N log^2 N)
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Zero
+      - Tag: default
+        Name: Custom
+    URL: https://cran.r-project.org/web/packages/SuperGauss/SuperGauss.pdf
 LengthScale:
-  - null
+  - Isotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: default
+        Name: Fractional Brownian Motion
+      - Tag: yellow
+        Name: Matern
+      - Tag: teal
+        Name: Power Exponential
+      - Tag: teal
+        Name: Exponential
+    URL: https://cran.r-project.org/web/packages/SuperGauss/SuperGauss.pdf
 Mixture: false
 MixtureModels:
   - Types:
@@ -63,9 +72,9 @@ MixtureModels:
     URL: null
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+    URL: https://rdrr.io/cran/SuperGauss/man/NormalToeplitz.html
     Nugget:
       - Tag: null
         Name: null
@@ -74,14 +83,18 @@ Likelihood:
         Name: null
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+    URL: https://cran.r-project.org/web/packages/SuperGauss/vignettes/SuperGauss-quicktut.html
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: default
+        Name: optimize
+      - Tag: default
+        Name: nlm
+      - Tag: default
+        Name: Newton's Method
+    URL: https://cran.r-project.org/web/packages/SuperGauss/vignettes/SuperGauss-quicktut.html
 Resampling: false
 Metrics:
   - null

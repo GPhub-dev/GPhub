@@ -35,27 +35,36 @@ Support:
   - Name: null
     URL: null
 Framework:
-  - null
-GPU: false
+  - TensorFlow
+GPU: true
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: orange
+        Name: Gaussian Process Classification (GPC)
+      - Tag: green
+        Name: Sparse Variational Gaussian Process (SVGP)
+      - Tag: red
+        Name: Multi-output Gaussian Process (MOGP)
+    URL: https://arxiv.org/pdf/1610.05392
 Complexity:
   - null
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Zero
+    URL: https://arxiv.org/pdf/1610.05392
 LengthScale:
-  - null
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: green
+        Name: ArcCosine
+    URL: https://github.com/ebonilla/AutoGP#readme
 Mixture: false
 MixtureModels:
   - Types:
@@ -64,9 +73,15 @@ MixtureModels:
     URL: null
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+      - Tag: default
+        Name: Logit
+      - Tag: default
+        Name: Softmax
+      - Tag: default
+        Name: Regression Network
+    URL: https://arxiv.org/pdf/1610.05392
     Nugget:
       - Tag: null
         Name: null
@@ -75,14 +90,20 @@ Likelihood:
         Name: null
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: teal
+        Name: Stochastic Variational Inference (SVI)
+      - Tag: red
+        Name: Evidence Lower Bound (ELBO)
+      - Tag: green
+        Name: Leave-One-Out Cross-Validation (LOOCV)
+    URL: https://github.com/ebonilla/AutoGP#readme
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: purple
+        Name: TensorFlow optimizer
+      - Tag: default
+        Name: RMSProp
+    URL: https://github.com/ebonilla/AutoGP#readme
 Resampling: false
 Metrics:
   - null

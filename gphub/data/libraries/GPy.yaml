@@ -133,7 +133,7 @@ Likelihood:
       - Tag: yellow
         Name: Gamma
       - Tag: default
-        Name: LogLogistic
+        Name: Log Logistic
       - Tag: default
         Name: Log Gaussian
       - Tag: default

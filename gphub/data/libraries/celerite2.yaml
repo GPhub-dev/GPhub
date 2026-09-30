@@ -18,7 +18,8 @@ Version:
   - Name: v0.3.3
     URL: https://github.com/exoplanet-dev/celerite2/releases/tag/v0.3.3
 Installation:
-  - null
+  - PyPI
+  - conda
 Developer:
   - Tag: purple
     Name: University of Washington
@@ -27,7 +28,7 @@ Developer:
     Name: Flatiron Institute
     URL: https://www.simonsfoundation.org/flatiron/
   - Tag: default
-    Name: celertie2 contributors
+    Name: celerite2 contributors
     URL: https://github.com/exoplanet-dev/celerite2/graphs/contributors
 Docs:
   - Name: docs
@@ -38,54 +39,83 @@ Support:
   - Name: null
     URL: null
 Framework:
-  - null
+  - JAX
+  - NumPyro
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+    URL: https://celerite2.readthedocs.io/en/latest/
 Complexity:
   - null
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Zero
+      - Tag: orange
+        Name: Constant
+    URL: https://celerite2.readthedocs.io/en/latest/api/python/
 LengthScale:
   - null
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Mixture: false
+      - Tag: default
+        Name: SHO Term
+      - Tag: default
+        Name: Rotation Term
+      - Tag: yellow
+        Name: Matern32
+      - Tag: default
+        Name: Real Term
+      - Tag: default
+        Name: Complex Term
+      - Tag: default
+        Name: Custom
+    URL: https://celerite2.readthedocs.io/en/latest/api/python/
+Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+      - Tag: default
+        Name: Derivative
+      - Tag: default
+        Name: Convolution
+    URL: https://celerite2.readthedocs.io/en/latest/api/python/
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+    URL: https://celerite2.readthedocs.io/en/latest/api/python/
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
+      - Tag: default
+        Name: Custom
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: default
+        Name: Markov Chain Monte Carlo (MCMC)
+      - Tag: default
+        Name: Hamiltonian Monte Carlo (HMC)
+    URL: https://celerite2.readthedocs.io/en/latest/tutorials/first/
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: yellow
+        Name: L-BFGS-B
+      - Tag: blue
+        Name: SciPy optimizer
+    URL: https://celerite2.readthedocs.io/en/latest/tutorials/first/
 Resampling: false
 Metrics:
   - null

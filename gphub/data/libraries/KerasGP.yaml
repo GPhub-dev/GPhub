@@ -37,27 +37,43 @@ Support:
   - Name: null
     URL: null
 Framework:
-  - null
+  - TensorFlow
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: default
+        Name: Deep Kernel Learning (DKL)
+      - Tag: default
+        Name: GP-RNN / GP-LSTM / GP-GRU
+      - Tag: default
+        Name: Structured Kernel Interpolation (SKI/KISS-GP)
+      - Tag: default
+        Name: Massively Scalable Gaussian Process (MSGP)
+    URL: https://github.com/alshedivat/keras-gp#readme
 Complexity:
   - null
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Zero
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: red
+        Name: Sum
+    URL: https://github.com/alshedivat/keras-gp/tree/master/examples
 LengthScale:
-  - null
+  - Isotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: default
+        Name: Spectral Mixture
+    URL: https://github.com/alshedivat/keras-gp/tree/master/examples
 Mixture: false
 MixtureModels:
   - Types:
@@ -66,25 +82,32 @@ MixtureModels:
     URL: null
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+    URL: https://github.com/alshedivat/keras-gp/blob/master/kgp/layers.py
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: default
+        Name: Exact inference
+    URL: https://github.com/alshedivat/keras-gp/blob/master/kgp/models.py
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: orange
+        Name: Adam
+      - Tag: orange
+        Name: Keras optimizer
+    URL: https://github.com/alshedivat/keras-gp#readme
 Resampling: false
 Metrics:
-  - null
+  - RMSE
+  - MSE

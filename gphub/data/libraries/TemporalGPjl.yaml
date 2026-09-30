@@ -1,6 +1,6 @@
 PackageID: TemporalGPjl
 Library:
-  - Name: TemporalGP.jl
+  - Name: TemporalGPs.jl
     URL: https://github.com/JuliaGaussianProcesses/TemporalGPs.jl
     Reference:
       - Author: Tebbutt et al. (2021)
@@ -17,7 +17,7 @@ Version:
   - Name: v0.7.3
     URL: https://github.com/JuliaGaussianProcesses/TemporalGPs.jl/releases/tag/v0.7.3
 Installation:
-  - null
+  - Pkg.jl
 Developer:
   - Tag: yellow
     Name: University of Cambridge
@@ -37,54 +37,92 @@ Support:
   - Name: null
     URL: null
 Framework:
-  - null
+  - Distributions.jl
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: default
+        Name: Markov (State Space) Gaussian Process
+      - Tag: default
+        Name: Spatio-Temporal Gaussian Process
+      - Tag: default
+        Name: Sparse Markov Gaussian Process
+      - Tag: orange
+        Name: Gaussian Process Classification (GPC)
+    URL: https://github.com/JuliaGaussianProcesses/TemporalGPs.jl/blob/master/README.md
 Complexity:
-  - null
+  - O(N)
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Zero
+      - Tag: orange
+        Name: Constant
+    URL: https://github.com/JuliaGaussianProcesses/TemporalGPs.jl/blob/master/examples/exact_time_learning.jl
 LengthScale:
-  - null
+  - Isotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Mixture: false
+      - Tag: yellow
+        Name: Matern12
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+      - Tag: green
+        Name: Cosine
+      - Tag: default
+        Name: Approximate Periodic
+      - Tag: orange
+        Name: Constant
+      - Tag: blue
+        Name: Squared Exponential
+    URL: https://github.com/JuliaGaussianProcesses/TemporalGPs.jl/blob/master/src/gp/lti_sde.jl
+Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+      - Tag: teal
+        Name: Scale
+      - Tag: default
+        Name: Separable
+    URL: https://github.com/JuliaGaussianProcesses/TemporalGPs.jl/blob/master/src/gp/lti_sde.jl
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+      - Tag: orange
+        Name: Bernoulli
+    URL: https://github.com/JuliaGaussianProcesses/TemporalGPs.jl/blob/master/README.md
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
+      - Tag: default
+        Name: Custom
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: red
+        Name: Evidence Lower Bound (ELBO)
+      - Tag: uiBlue
+        Name: Deterministic Training Conditional (DTC)
+    URL: https://github.com/JuliaGaussianProcesses/TemporalGPs.jl/blob/master/examples/exact_time_learning.jl
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: purple
+        Name: Optim.jl optimizer
+      - Tag: yellow
+        Name: BFGS
+    URL: https://github.com/JuliaGaussianProcesses/TemporalGPs.jl/blob/master/examples/exact_time_learning.jl
 Resampling: false
 Metrics:
   - null

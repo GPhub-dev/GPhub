@@ -15,10 +15,10 @@ Repository:
   - Name: mituq/muq2
     URL: https://bitbucket.org/mituq/muq2
 Version:
-  - Name: v0.4.5
-    URL: https://bitbucket.org/mituq/muq2/commits/tag/v0.4.5
+  - Name: v0.5.0
+    URL: https://github.com/NexGenAnalytics/MIT-MUQ/releases/tag/v0.5.0
 Installation:
-  - null
+  - conda
 Developer:
   - Tag: red
     Name: Massachusetts Institute of Technology
@@ -53,40 +53,67 @@ Framework:
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: default
+        Name: Markov (State Space) Gaussian Process
+    URL: https://mituq.bitbucket.io/source/_site/latest/group__GaussianProcesses.html
 Complexity:
   - null
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Zero
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: default
+        Name: Linear Transform
+      - Tag: red
+        Name: Sum
+    URL: https://mituq.bitbucket.io/source/_site/latest/group__MeanFunctions.html
 LengthScale:
-  - null
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Mixture: false
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: yellow
+        Name: Matern
+      - Tag: green
+        Name: Periodic
+      - Tag: green
+        Name: Linear
+      - Tag: orange
+        Name: Constant
+      - Tag: default
+        Name: White noise
+      - Tag: default
+        Name: Linear Transform
+    URL: https://mituq.bitbucket.io/source/_site/latest/group__CovarianceKernels.html
+Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+      - Tag: default
+        Name: Concatenate
+    URL: https://mituq.bitbucket.io/source/_site/latest/group__CovarianceKernels.html
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+    URL: https://mituq.bitbucket.io/source/_site/latest/classmuq_1_1Approximation_1_1GaussianProcess.html
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: blue
+        Name: "default value: 1e-14"
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
 EstimationMethods:
   - Types:
       - Tag: null

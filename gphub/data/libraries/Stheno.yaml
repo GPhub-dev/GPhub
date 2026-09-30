@@ -18,7 +18,8 @@ Version:
   - Name: v0.8.2
     URL: https://github.com/JuliaGaussianProcesses/Stheno.jl/releases/tag/v0.8.2
 Installation:
-  - null
+  - Pkg.jl
+  - PyPI
 Developer:
   - Tag: yellow
     Name: University of Cambridge
@@ -48,54 +49,168 @@ Support:
   - Name: GitHub discussions
     URL: https://github.com/wesselb/stheno/discussions
 Framework:
-  - null
+  - NumPy
+  - TensorFlow
+  - PyTorch
+  - JAX
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: default
+        Name: Gaussian Process Probabilistic Programme (GPPP)
+      - Tag: red
+        Name: Multi-output Gaussian Process (MOGP)
+      - Tag: green
+        Name: Sparse Gaussian Process Regression (SGPR)
+      - Tag: uiBlue
+        Name: GPR with Fully Independent Training Conditional (FITC)
+      - Tag: default
+        Name: GPR with Deterministic Training Conditional (DTC)
+      - Tag: default
+        Name: Bayesian Linear Regression
+    URL: https://github.com/JuliaGaussianProcesses/Stheno.jl/blob/master/README.md
 Complexity:
   - null
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Zero
+      - Tag: orange
+        Name: Constant
+      - Tag: default
+        Name: Custom
+    URL: https://juliagaussianprocesses.github.io/AbstractGPs.jl/stable/api/
 LengthScale:
-  - null
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Mixture: false
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: teal
+        Name: Exponential
+      - Tag: default
+        Name: Gamma Exponential
+      - Tag: yellow
+        Name: Matern
+      - Tag: yellow
+        Name: Matern12
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+      - Tag: yellow
+        Name: Matern72
+      - Tag: red
+        Name: Rational Quadratic
+      - Tag: default
+        Name: Rational
+      - Tag: default
+        Name: Gamma Rational
+      - Tag: green
+        Name: Linear
+      - Tag: teal
+        Name: Polynomial
+      - Tag: teal
+        Name: Piecewise Polynomial
+      - Tag: green
+        Name: Periodic
+      - Tag: green
+        Name: Cosine
+      - Tag: orange
+        Name: Constant
+      - Tag: default
+        Name: White noise
+      - Tag: default
+        Name: Exponentiated
+      - Tag: default
+        Name: Fractional Brownian Motion
+      - Tag: default
+        Name: Gabor
+      - Tag: default
+        Name: Gibbs
+      - Tag: default
+        Name: Neural Network
+      - Tag: default
+        Name: Wiener
+      - Tag: default
+        Name: Spectral Mixture
+      - Tag: default
+        Name: Independent Multi-output
+      - Tag: default
+        Name: Intrinsic Coregionalization
+      - Tag: default
+        Name: Latent Factor
+      - Tag: default
+        Name: Linear Mixing Model
+      - Tag: default
+        Name: Causal Exponentiated Quadratic (CEQ)
+      - Tag: default
+        Name: Decaying
+      - Tag: default
+        Name: Log
+    URL: https://juliagaussianprocesses.github.io/KernelFunctions.jl/stable/kernels/
+Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+      - Tag: teal
+        Name: Scale
+      - Tag: default
+        Name: Tensor Product
+    URL: https://juliagaussianprocesses.github.io/KernelFunctions.jl/stable/kernels/
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+    URL: https://github.com/JuliaGaussianProcesses/Stheno.jl/blob/master/README.md
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
+      - Tag: blue
+        Name: "default value: 1e-12"
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
+      - Tag: default
+        Name: Custom
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: default
+        Name: Markov Chain Monte Carlo (MCMC)
+      - Tag: default
+        Name: Hamiltonian Monte Carlo (HMC)
+      - Tag: red
+        Name: Evidence Lower Bound (ELBO)
+      - Tag: teal
+        Name: Variational Free Energy (VFE)
+      - Tag: uiBlue
+        Name: Fully Independent Training Conditional (FITC)
+      - Tag: uiBlue
+        Name: Deterministic Training Conditional (DTC)
+    URL: https://juliagaussianprocesses.github.io/Stheno.jl/stable/examples/getting_started/
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: purple
+        Name: Optim.jl optimizer
+      - Tag: yellow
+        Name: BFGS
+      - Tag: default
+        Name: Nelder-Mead
+      - Tag: yellow
+        Name: L-BFGS-B
+      - Tag: purple
+        Name: PyTorch optimizer
+      - Tag: orange
+        Name: Adam
+    URL: https://juliagaussianprocesses.github.io/Stheno.jl/stable/examples/getting_started/
 Resampling: false
 Metrics:
   - null

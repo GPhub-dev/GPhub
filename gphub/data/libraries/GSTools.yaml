@@ -17,7 +17,8 @@ Version:
   - Name: v1.7.0
     URL: https://github.com/GeoStat-Framework/GSTools/releases/tag/v1.7.0
 Installation:
-  - null
+  - PyPI
+  - conda
 Developer:
   - Tag: blue
     Name: UFZ
@@ -45,54 +46,114 @@ Support:
   - Name: GitHub discussions
     URL: https://github.com/GeoStat-Framework/GSTools/discussions
 Framework:
-  - null
+  - NumPy
+  - SciPy
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: default
+        Name: Simple Kriging (SK)
+      - Tag: default
+        Name: Ordinary Kriging (OK)
+      - Tag: default
+        Name: Universal Kriging (UK)
+      - Tag: default
+        Name: External Drift Kriging
+      - Tag: default
+        Name: Detrended Kriging
+    URL: https://geostat-framework.readthedocs.io/projects/gstools/en/stable/api/gstools.krige.html
 Complexity:
   - null
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: red
+        Name: Quadratic
+      - Tag: teal
+        Name: Polynomial
+      - Tag: default
+        Name: External Drift
+      - Tag: default
+        Name: Custom
+    URL: https://geostat-framework.readthedocs.io/projects/gstools/en/stable/api/gstools.krige.Krige.html
 LengthScale:
-  - null
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Mixture: false
+      - Tag: blue
+        Name: Gaussian
+      - Tag: teal
+        Name: Exponential
+      - Tag: yellow
+        Name: Matern
+      - Tag: default
+        Name: Exponential Integral
+      - Tag: default
+        Name: Stable
+      - Tag: red
+        Name: Rational Quadratic
+      - Tag: default
+        Name: Cubic
+      - Tag: green
+        Name: Linear
+      - Tag: default
+        Name: Circular
+      - Tag: default
+        Name: Spherical
+      - Tag: default
+        Name: HyperSpherical
+      - Tag: default
+        Name: SuperSpherical
+      - Tag: default
+        Name: J-Bessel
+      - Tag: default
+        Name: Truncated Power Law (TPLGaussian, TPLExponential, TPLStable, TPLSimple)
+      - Tag: default
+        Name: White noise
+      - Tag: default
+        Name: Custom
+    URL: https://geostat-framework.readthedocs.io/projects/gstools/en/stable/api/gstools.covmodel.html
+Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: red
+        Name: Sum
+    URL: https://geostat-framework.readthedocs.io/projects/gstools/en/stable/api/gstools.covmodel.SumModel.html
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+    URL: https://geostat-framework.readthedocs.io/projects/gstools/en/stable/api/gstools.krige.Krige.html
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: default
+        Name: Variogram fitting (non-linear least squares)
+      - Tag: default
+        Name: Weighted Least Squares (WLS)
+    URL: https://geostat-framework.readthedocs.io/projects/gstools/en/stable/api/gstools.covmodel.CovModel.html
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: SciPy optimizer
+      - Tag: default
+        Name: Trust Region Reflective (trf)
+      - Tag: default
+        Name: Dogleg (dogbox)
+    URL: https://geostat-framework.readthedocs.io/projects/gstools/en/stable/api/gstools.covmodel.CovModel.html
 Resampling: false
 Metrics:
-  - null
+  - R2

@@ -36,50 +36,87 @@ Framework:
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: green
+        Name: Sparse Gaussian Process Regression (SGPR)
+    URL: https://swiftnav-albatross.readthedocs.io/en/latest/
 Complexity:
-  - null
+  - O(N^3)
+  - O(NM^2)
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Zero
+      - Tag: green
+        Name: Linear
+      - Tag: default
+        Name: Custom
+    URL: https://github.com/swift-nav/albatross/blob/master/include/albatross/src/covariance_functions/mean_function.hpp
 LengthScale:
-  - null
+  - Isotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Mixture: false
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: teal
+        Name: Exponential
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+      - Tag: orange
+        Name: Constant
+      - Tag: teal
+        Name: Polynomial
+      - Tag: default
+        Name: White noise
+      - Tag: default
+        Name: Custom
+    URL: https://github.com/swift-nav/albatross/tree/master/include/albatross/src/covariance_functions
+Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+      - Tag: teal
+        Name: Scale
+    URL: https://swiftnav-albatross.readthedocs.io/en/latest/gp-albatross.html
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+    URL: https://swiftnav-albatross.readthedocs.io/en/latest/gp-background.html
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
+      - Tag: default
+        Name: Custom
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: green
+        Name: Leave-One-Out Cross-Validation (LOOCV)
+      - Tag: default
+        Name: Markov Chain Monte Carlo (MCMC)
+      - Tag: uiBlue
+        Name: Fully Independent Training Conditional (FITC)
+      - Tag: uiBlue
+        Name: Partially Independent Training Conditional (PITC)
+    URL: https://swiftnav-albatross.readthedocs.io/en/latest/tuning.html
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Resampling: false
+      - Tag: default
+        Name: NLopt
+    URL: https://swiftnav-albatross.readthedocs.io/en/latest/tuning.html
+Resampling: true
 Metrics:
-  - null
+  - RMSE
+  - LOOCV
+  - NLPD

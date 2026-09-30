@@ -17,7 +17,7 @@ Version:
   - Name: v0.4.5
     URL: https://github.com/secondmind-labs/GPflux/releases/tag/v0.4.5
 Installation:
-  - null
+  - PyPI
 Developer:
   - Tag: yellow
     Name: University of Cambridge
@@ -45,54 +45,84 @@ Support:
   - Name: slack
     URL: https://secondmind-labs.slack.com/join/shared_invite/zt-ph07nuie-gMlkle__tjvXBay4FNSLkw#/shared-invite/email
 Framework:
-  - null
+  - TensorFlow
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: yellow
+        Name: Deep Gaussian Processes (DGP)
+      - Tag: green
+        Name: Sparse Variational Gaussian Process (SVGP)
+    URL: https://secondmind-labs.github.io/GPflux/notebooks/intro.html
 Complexity:
-  - null
+  - O(M^3)
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: default
+        Name: Identity
+      - Tag: green
+        Name: Linear
+      - Tag: blue
+        Name: Zero
+    URL: https://secondmind-labs.github.io/GPflux/autoapi/gpflux/helpers/index.html
 LengthScale:
-  - null
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Mixture: false
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: yellow
+        Name: Matern12
+      - Tag: green
+        Name: Linear
+      - Tag: green
+        Name: Periodic
+      - Tag: default
+        Name: Separate Independent
+      - Tag: default
+        Name: Custom
+    URL: https://secondmind-labs.github.io/GPflux/autoapi/gpflux/helpers/index.html
+Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: red
+        Name: Sum
+    URL: https://secondmind-labs.github.io/GPflux/autoapi/gpflux/helpers/index.html
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+      - Tag: orange
+        Name: Bernoulli
+      - Tag: default
+        Name: Softmax
+      - Tag: default
+        Name: RobustMax
+      - Tag: default
+        Name: Custom
+    URL: https://secondmind-labs.github.io/GPflux/notebooks/intro.html
     Nugget:
       - Tag: null
         Name: null
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: red
+        Name: Evidence Lower Bound (ELBO)
+      - Tag: teal
+        Name: Variational Inference (VI)
+    URL: https://secondmind-labs.github.io/GPflux/autoapi/gpflux/layers/gp_layer/index.html
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: orange
+        Name: Adam
+      - Tag: orange
+        Name: Keras optimizer
+      - Tag: default
+        Name: Natural Gradient Descent (NGD)
+    URL: https://secondmind-labs.github.io/GPflux/autoapi/gpflux/optimization/keras_natgrad/index.html
 Resampling: false
 Metrics:
   - null

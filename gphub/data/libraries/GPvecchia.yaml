@@ -16,10 +16,10 @@ Repository:
   - Name: katzfuss-group/GPvecchia
     URL: https://github.com/katzfuss-group/GPvecchia
 Version:
-  - Name: v0.1.4
-    URL: https://github.com/katzfuss-group/GPvecchia/releases/tag/v0.1.4
+  - Name: 0.1.8
+    URL: https://cran.r-project.org/package=GPvecchia
 Installation:
-  - null
+  - CRAN
 Developer:
   - Tag: brown
     Name: Texas A&M University
@@ -43,23 +43,45 @@ Framework:
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: default
+        Name: Vecchia-approximated Gaussian Process
+      - Tag: default
+        Name: Sparse General Vecchia (SGV)
+      - Tag: default
+        Name: Vecchia-Laplace Generalised Gaussian Process
+      - Tag: default
+        Name: Nearest Neighbour Gaussian Process (NNGP)
+      - Tag: default
+        Name: Multi-Resolution Approximation (MRA)
+      - Tag: default
+        Name: Modified Predictive Process (MPP)
+      - Tag: default
+        Name: Full-Scale Approximation (FSA)
+    URL: https://cran.r-project.org/web/packages/GPvecchia/vignettes/GPvecchia_vignette.html
 Complexity:
   - null
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Zero
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+    URL: https://rdrr.io/cran/GPvecchia/man/vecchia_estimate.html
 LengthScale:
-  - null
+  - Isotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: yellow
+        Name: Matern
+      - Tag: default
+        Name: Exponential + Squared Exponential (esqe)
+      - Tag: default
+        Name: Custom
+    URL: https://cran.r-project.org/web/packages/GPvecchia/GPvecchia.pdf
 Mixture: false
 MixtureModels:
   - Types:
@@ -68,25 +90,41 @@ MixtureModels:
     URL: null
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+      - Tag: default
+        Name: Logit
+      - Tag: green
+        Name: Poisson
+      - Tag: yellow
+        Name: Gamma
+      - Tag: yellow
+        Name: Beta
+    URL: https://rdrr.io/cran/GPvecchia/man/calculate_posterior_VL.html
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: default
+        Name: Vecchia Likelihood
+      - Tag: purple
+        Name: Laplace Approximation (LA)
+    URL: https://cran.r-project.org/web/packages/GPvecchia/vignettes/GPvecchia_vignette.html
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: default
+        Name: optim
+      - Tag: default
+        Name: Nelder-Mead
+    URL: https://cran.r-project.org/web/packages/GPvecchia/vignettes/GPvecchia_vignette.html
 Resampling: false
 Metrics:
   - null

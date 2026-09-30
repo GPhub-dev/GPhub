@@ -152,13 +152,17 @@ Likelihood:
         Name: Beta
       - Tag: default
         Name: Mixture
-    URL: null
+    URL: http://gaussianprocess.org/gpml/code/matlab/doc/index.html
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
+      - Tag: red
+        Name: Fixed Non-Trainable
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
 EstimationMethods:
   - Types:
       - Tag: default
@@ -178,9 +182,13 @@ EstimationMethods:
     URL: null
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: orange
+        Name: Conjugate Gradient (CG)
+      - Tag: yellow
+        Name: L-BFGS-B
+      - Tag: default
+        Name: minFunc
+    URL: https://gitlab.com/hnickisch/gpml-matlab/-/blob/master/README.md
 Resampling: false
 Metrics:
   - null

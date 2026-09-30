@@ -17,7 +17,8 @@ Version:
   - Name: v1.7.3
     URL: https://github.com/GeoStat-Framework/PyKrige/releases/tag/v1.7.3
 Installation:
-  - null
+  - PyPI
+  - conda
 Developer:
   - Tag: blue
     Name: UFZ
@@ -45,27 +46,57 @@ Support:
   - Name: GitHub discussions
     URL: https://github.com/GeoStat-Framework/PyKrige/discussions
 Framework:
-  - null
+  - NumPy
+  - SciPy
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: default
+        Name: Ordinary Kriging (OK)
+      - Tag: default
+        Name: Universal Kriging (UK)
+      - Tag: default
+        Name: Regression Kriging
+      - Tag: default
+        Name: Classification Kriging (Simplicial Indicator Kriging)
+    URL: https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/index.html
 Complexity:
   - null
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: default
+        Name: Point Logarithmic
+      - Tag: default
+        Name: External Drift
+      - Tag: default
+        Name: Custom
+    URL: https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/index.html
 LengthScale:
-  - null
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: green
+        Name: Linear
+      - Tag: default
+        Name: Power
+      - Tag: blue
+        Name: Gaussian
+      - Tag: default
+        Name: Spherical
+      - Tag: teal
+        Name: Exponential
+      - Tag: default
+        Name: Hole-Effect
+      - Tag: default
+        Name: Custom
+    URL: https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/variogram_models.html
 Mixture: false
 MixtureModels:
   - Types:
@@ -74,25 +105,28 @@ MixtureModels:
     URL: null
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+    URL: https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/generated/pykrige.ok.OrdinaryKriging.html
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
     Noise:
       - Tag: null
         Name: null
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: default
+        Name: Variogram fitting (soft L1 norm minimization)
+    URL: https://geostat-framework.readthedocs.io/projects/pykrige/en/stable/generated/pykrige.ok.OrdinaryKriging.html
 OptimizationMethods:
   - Types:
       - Tag: null
         Name: null
     URL: null
-Resampling: false
+Resampling: true
 Metrics:
-  - null
+  - R2
+  - CV

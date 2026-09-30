@@ -17,7 +17,7 @@ Version:
   - Name: 1.2.3
     URL: https://cran.r-project.org/package=deepgp
 Installation:
-  - null
+  - CRAN
 Developer:
   - Tag: red
     Name: Virginia Polytechnic Institute and State University
@@ -35,23 +35,34 @@ Framework:
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: yellow
+        Name: Deep Gaussian Processes (DGP)
+      - Tag: default
+        Name: Vecchia-approximated GP/DGP
+      - Tag: default
+        Name: Gradient-enhanced GP/DGP
+      - Tag: default
+        Name: Monotonically-warped DGP
+    URL: https://rdrr.io/cran/deepgp/man/deepgp-package.html
 Complexity:
-  - null
+  - O(N^3)
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Zero
+    URL: https://cran.r-project.org/web/packages/deepgp/vignettes/deepgp.html
 LengthScale:
-  - null
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: yellow
+        Name: Matern
+      - Tag: blue
+        Name: Squared Exponential
+    URL: https://rdrr.io/cran/deepgp/man/fit_one_layer.html
 Mixture: false
 MixtureModels:
   - Types:
@@ -60,20 +71,26 @@ MixtureModels:
     URL: null
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+    URL: https://rdrr.io/cran/deepgp/man/fit_one_layer.html
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: default
+        Name: Markov Chain Monte Carlo (MCMC)
+      - Tag: default
+        Name: Metropolis-Hastings (MH)
+      - Tag: default
+        Name: Elliptical Slice Sampling (ESS)
+    URL: https://rdrr.io/cran/deepgp/man/deepgp-package.html
 OptimizationMethods:
   - Types:
       - Tag: null
@@ -81,4 +98,4 @@ OptimizationMethods:
     URL: null
 Resampling: false
 Metrics:
-  - null
+  - RMSE

@@ -17,7 +17,7 @@ Version:
   - Name: v0.6.5
     URL: https://github.com/google/neural-tangents/releases/tag/v0.6.5
 Installation:
-  - null
+  - PyPI
 Developer:
   - Tag: green
     Name: Google Brain
@@ -39,13 +39,19 @@ Support:
   - Name: GitHub discussions
     URL: https://github.com/google/neural-tangents/discussions
 Framework:
-  - null
-GPU: false
+  - JAX
+GPU: true
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: default
+        Name: Neural Network Gaussian Process (NNGP)
+      - Tag: default
+        Name: Neural Tangent Kernel (NTK)
+      - Tag: default
+        Name: NTK Gaussian Process (NTKGP)
+    URL: https://neural-tangents.readthedocs.io/en/latest/_autosummary/neural_tangents.predict.gp_inference.html
 Complexity:
   - null
 Trend:
@@ -57,31 +63,45 @@ LengthScale:
   - null
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Mixture: false
+      - Tag: default
+        Name: NNGP
+      - Tag: default
+        Name: NTK
+    URL: https://neural-tangents.readthedocs.io/en/latest/stax.html
+Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+      - Tag: default
+        Name: Concatenation
+      - Tag: default
+        Name: Serial composition
+      - Tag: default
+        Name: Parallel composition
+    URL: https://neural-tangents.readthedocs.io/en/latest/stax.html
 Likelihood:
   - Types:
       - Tag: null
         Name: null
-    URL: null
+    URL: https://neural-tangents.readthedocs.io/en/latest/_autosummary/neural_tangents.predict.gp_inference.html
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
+      - Tag: blue
+        Name: "default value: 0.0"
     Noise:
       - Tag: null
         Name: null
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: default
+        Name: Exact inference
+      - Tag: default
+        Name: Infinite-time Gradient Flow (NTK)
+    URL: https://neural-tangents.readthedocs.io/en/latest/_autosummary/neural_tangents.predict.gp_inference.html
 OptimizationMethods:
   - Types:
       - Tag: null

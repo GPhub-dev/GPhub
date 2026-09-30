@@ -17,7 +17,7 @@ Version:
   - Name: v1.3.5
     URL: https://github.com/marionmari/pyGPs/releases/tag/v1.3.5
 Installation:
-  - null
+  - PyPI
 Developer:
   - Tag: red
     Name: Washington University
@@ -43,54 +43,133 @@ Support:
   - Name: null
     URL: null
 Framework:
-  - null
+  - NumPy
+  - SciPy
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: orange
+        Name: Gaussian Process Classification (GPC)
+      - Tag: uiBlue
+        Name: GPR with Fully Independent Training Conditional (FITC)
+      - Tag: uiBlue
+        Name: GPC with Fully Independent Training Conditional (FITC)
+      - Tag: default
+        Name: Multi-class Gaussian Process Classification (one-vs-one)
+    URL: https://www.cse.wustl.edu/~m.neumann/pyGPs_doc/Examples.html
 Complexity:
   - null
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Zero
+      - Tag: default
+        Name: One
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: red
+        Name: Sum
+      - Tag: default
+        Name: Product
+      - Tag: default
+        Name: Scaled
+      - Tag: default
+        Name: Power
+      - Tag: default
+        Name: Custom
+    URL: https://www.cse.wustl.edu/~m.neumann/pyGPs_doc/Theory.html
 LengthScale:
-  - null
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Mixture: false
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: yellow
+        Name: Matern
+      - Tag: green
+        Name: Periodic
+      - Tag: teal
+        Name: Polynomial
+      - Tag: teal
+        Name: Piecewise Polynomial
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: red
+        Name: Rational Quadratic
+      - Tag: default
+        Name: Gabor
+      - Tag: default
+        Name: Spectral Mixture
+      - Tag: default
+        Name: White noise
+      - Tag: default
+        Name: Graph kernels
+      - Tag: default
+        Name: Precomputed
+      - Tag: default
+        Name: Custom
+    URL: https://www.cse.wustl.edu/~m.neumann/pyGPs_doc/Theory.html
+Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+      - Tag: teal
+        Name: Scale
+    URL: https://www.cse.wustl.edu/~m.neumann/pyGPs_doc/Kernels.html
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+      - Tag: default
+        Name: Probit
+      - Tag: purple
+        Name: Laplace
+    URL: https://www.cse.wustl.edu/~m.neumann/pyGPs_doc/Default.html
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
+      - Tag: blue
+        Name: "default value: 0.1"
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: default
+        Name: Exact inference
+      - Tag: default
+        Name: Expectation Propagation (EP)
+      - Tag: purple
+        Name: Laplace Approximation (LA)
+      - Tag: uiBlue
+        Name: Fully Independent Training Conditional (FITC)
+    URL: https://www.cse.wustl.edu/~m.neumann/pyGPs_doc/Default.html
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Resampling: false
+      - Tag: default
+        Name: Minimize
+      - Tag: orange
+        Name: Conjugate Gradient (CG)
+      - Tag: yellow
+        Name: BFGS
+      - Tag: default
+        Name: Scaled Conjugate Gradient (SCG)
+    URL: https://www.cse.wustl.edu/~m.neumann/pyGPs_doc/Opts.html
+Resampling: true
 Metrics:
-  - null
+  - RMSE
+  - NLPD

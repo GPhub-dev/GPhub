@@ -17,7 +17,7 @@ Version:
   - Name: v8.0.0
     URL: https://github.com/SciML/Surrogates.jl/releases/tag/v8.0.0
 Installation:
-  - null
+  - Pkg.jl
 Developer:
   - Tag: red
     Name: Chan Zuckerberg Initiative
@@ -42,50 +42,71 @@ Framework:
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: uiBlue
+        Name: Gradient-enhanced Kriging (GEK)
+      - Tag: teal
+        Name: Kriging with Partial Least Squares (KPLS / KPLSK)
+      - Tag: default
+        Name: Gradient-enhanced KPLS (GEKPLS)
+    URL: https://github.com/SciML/Surrogates.jl#surrogate-models
 Complexity:
-  - null
+  - O(N^3)
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: orange
+        Name: Constant
+    URL: https://docs.sciml.ai/Surrogates/stable/surrogate/
 LengthScale:
-  - null
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Mixture: false
+      - Tag: teal
+        Name: Power Exponential
+      - Tag: blue
+        Name: Gaussian
+      - Tag: yellow
+        Name: Matern52
+      - Tag: teal
+        Name: Polynomial
+    URL: https://docs.sciml.ai/Surrogates/stable/surrogate/
+Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+      - Tag: teal
+        Name: Scale
+      - Tag: default
+        Name: Tensor Product
+    URL: https://juliagaussianprocesses.github.io/KernelFunctions.jl/stable/kernels/
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+    URL: https://docs.sciml.ai/Surrogates/stable/abstractgps/
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
+      - Tag: blue
+        Name: "default value: 10*eps()"
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+    URL: https://docs.sciml.ai/Surrogates/stable/kriging/
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: default
+        Name: Nelder-Mead
+    URL: https://docs.sciml.ai/Surrogates/stable/kriging/
 Resampling: false
 Metrics:
   - null

@@ -17,7 +17,8 @@ Version:
   - Name: v0.4.4
     URL: https://github.com/dfm/george/releases/tag/v0.4.4
 Installation:
-  - null
+  - PyPI
+  - conda
 Developer:
   - Tag: purple
     Name: New York University
@@ -37,54 +38,97 @@ Support:
   - Name: null
     URL: null
 Framework:
-  - null
+  - NumPy
+  - SciPy
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+    URL: https://george.readthedocs.io/en/latest/
 Complexity:
-  - null
+  - O(N^3)
+  - O(N log^2 N)
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Zero
+      - Tag: orange
+        Name: Constant
+      - Tag: default
+        Name: Custom
+    URL: https://george.readthedocs.io/en/latest/user/gp/
 LengthScale:
-  - null
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Mixture: false
+      - Tag: orange
+        Name: Constant
+      - Tag: default
+        Name: Dot Product
+      - Tag: teal
+        Name: Exponential
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+      - Tag: red
+        Name: Rational Quadratic
+      - Tag: teal
+        Name: Exponential Sine Squared
+      - Tag: green
+        Name: Cosine
+      - Tag: default
+        Name: Local Gaussian
+      - Tag: teal
+        Name: Polynomial
+      - Tag: green
+        Name: Linear
+      - Tag: default
+        Name: Custom
+    URL: https://george.readthedocs.io/en/latest/user/kernels/
+Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+    URL: https://george.readthedocs.io/en/latest/user/kernels/
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+    URL: https://george.readthedocs.io/en/latest/user/gp/
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
+      - Tag: blue
+        Name: "default value: log(TINY)"
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
+      - Tag: default
+        Name: Custom
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: default
+        Name: Markov Chain Monte Carlo (MCMC)
+    URL: https://george.readthedocs.io/en/latest/tutorials/hyper/
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: yellow
+        Name: L-BFGS-B
+      - Tag: blue
+        Name: SciPy optimizer
+    URL: https://george.readthedocs.io/en/latest/tutorials/hyper/
 Resampling: false
 Metrics:
   - null

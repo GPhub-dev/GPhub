@@ -19,7 +19,8 @@ Version:
   - Name: v0.4.3
     URL: https://github.com/dfm/celerite/releases/tag/v0.4.3
 Installation:
-  - null
+  - PyPI
+  - conda
 Developer:
   - Tag: purple
     Name: University of Washington
@@ -34,7 +35,7 @@ Developer:
     Name: Columbia University
     URL: https://www.columbia.edu
   - Tag: default
-    Name: celertie contributors
+    Name: celerite contributors
     URL: https://github.com/dfm/celerite/graphs/contributors
 Docs:
   - Name: docs
@@ -45,54 +46,78 @@ Support:
   - Name: null
     URL: null
 Framework:
-  - null
+  - NumPy
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+    URL: https://celerite.readthedocs.io/en/stable/
 Complexity:
-  - null
+  - O(N)
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Zero
+      - Tag: orange
+        Name: Constant
+      - Tag: default
+        Name: Custom
+    URL: https://celerite.readthedocs.io/en/stable/python/gp/
 LengthScale:
   - null
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Mixture: false
+      - Tag: default
+        Name: Real Term
+      - Tag: default
+        Name: Complex Term
+      - Tag: default
+        Name: SHO Term
+      - Tag: yellow
+        Name: Matern32
+      - Tag: default
+        Name: White noise
+      - Tag: default
+        Name: Custom
+    URL: https://celerite.readthedocs.io/en/stable/python/kernel/
+Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+    URL: https://celerite.readthedocs.io/en/stable/python/kernel/
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+    URL: https://celerite.readthedocs.io/en/stable/python/gp/
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
+      - Tag: default
+        Name: Custom
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: default
+        Name: Markov Chain Monte Carlo (MCMC)
+    URL: https://celerite.readthedocs.io/en/stable/tutorials/modeling/
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: yellow
+        Name: L-BFGS-B
+      - Tag: blue
+        Name: SciPy optimizer
+    URL: https://celerite.readthedocs.io/en/stable/tutorials/first/
 Resampling: false
 Metrics:
   - null

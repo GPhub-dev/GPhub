@@ -129,7 +129,7 @@ Correlation:
         Name: Independent Latent
       - Tag: green
         Name: Linear
-      - Tag: green
+      - Tag: default
         Name: Linear Coregionalization
       - Tag: yellow
         Name: Matern12

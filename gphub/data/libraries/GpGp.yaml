@@ -17,7 +17,7 @@ Version:
   - Name: 1.0.0
     URL: https://cran.r-project.org/package=GpGp
 Installation:
-  - null
+  - CRAN
 Developer:
   - Tag: red
     Name: Cornell University
@@ -38,23 +38,52 @@ Framework:
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: default
+        Name: Vecchia-approximated Gaussian Process
+      - Tag: default
+        Name: Spatio-Temporal Gaussian Process
+      - Tag: default
+        Name: Gaussian Process on the Sphere
+      - Tag: default
+        Name: Nonstationary-variance Gaussian Process
+    URL: https://rdrr.io/cran/GpGp/man/GpGp.html
 Complexity:
   - null
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+    URL: https://rdrr.io/cran/GpGp/man/fit_model.html
 LengthScale:
-  - null
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: yellow
+        Name: Matern
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+      - Tag: yellow
+        Name: Matern72
+      - Tag: yellow
+        Name: Matern92
+      - Tag: teal
+        Name: Exponential
+      - Tag: default
+        Name: Spatio-Temporal Matern
+      - Tag: default
+        Name: Matern on Sphere
+      - Tag: default
+        Name: Nonstationary-Variance Matern
+      - Tag: default
+        Name: Categorical Random-Effects Matern
+    URL: https://rdrr.io/cran/GpGp/man/GpGp.html
 Mixture: false
 MixtureModels:
   - Types:
@@ -63,25 +92,29 @@ MixtureModels:
     URL: null
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+    URL: https://rdrr.io/cran/GpGp/man/fit_model.html
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
+      - Tag: yellow
+        Name: Inferable
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: default
+        Name: Vecchia Likelihood
+    URL: https://rdrr.io/cran/GpGp/man/fit_model.html
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: default
+        Name: Fisher Scoring
+    URL: https://rdrr.io/cran/GpGp/man/fisher_scoring.html
 Resampling: false
 Metrics:
   - null

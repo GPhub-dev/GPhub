@@ -23,7 +23,7 @@ CANON = {
     "License": {"Apache-2.0", "BSD-3-Clause", "BSL-1.0", "FreeBSD", "GPL-2.0", "GPL-3.0", "LGPL", "MIT", "Custom"},
     "Installation": {"PyPI", "conda", "matlab", "Pkg.jl", "CRAN", "cargo"},
     "Framework": {"PyTorch", "TensorFlow", "NumPy", "SciPy", "JAX", "Numba", "NumPyro", "Optim.jl", "Distributions.jl"},
-    "Complexity": {"O(N^3)", "O(N^2)", "O(N)", "O(NM^2)", "O(M^3)", r"\( \mathcal{O}(N + M \log M) \)"},
+    "Complexity": {"O(N^3)", "O(N^2)", "O(N)", "O(NM^2)", "O(M^3)", "O(N log^2 N)", "O(NM + M)", r"\( \mathcal{O}(N + M \log M) \)"},
     "LengthScale": {"Isotropic", "Anisotropic"},
     "Metrics": {"RMSE", "MSE", "MAE", "R2", "LOOCV", "CV", "NLPD", "MAPE", "MedAE", "MSLL", "MSLE", "Validation Error"},
     "Support": {"blog", "chat", "contact form", "forum", "GitHub discussions", "mailing-list", "stackoverflow", "slack"},

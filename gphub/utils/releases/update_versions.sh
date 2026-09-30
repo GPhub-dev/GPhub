@@ -30,13 +30,19 @@ for f in data/libraries/*.yaml; do
     echo "::notice file=$f::repository $repo is archived"
   fi
 
-  if [[ "$repo" == cran/* ]]; then
-    # CRAN mirrors: GitHub tags are not chronological and may be R versions
-    # (R-3.0.3), so take the package version from CRAN itself.
-    pkg=${repo#cran/}
-    tag=$(curl -s --max-time 30 "https://crandb.r-pkg.org/$pkg" | jq -r '.Version // empty' 2>/dev/null || true)
-    if [ -z "$tag" ]; then echo "skip $name: CRAN lookup failed"; continue; fi
-    link="https://cran.r-project.org/package=$pkg"
+  # R packages: GitHub tags of CRAN mirrors are not chronological (and may be
+  # R versions such as R-3.0.3), and GitHub releases of CRAN packages lag CRAN,
+  # so take the version from CRAN when the repo is a cran/* mirror or the only
+  # installation channel is CRAN.
+  cranpkg=""
+  if [[ "$repo" == cran/* ]]; then cranpkg=${repo#cran/}
+  elif [ "$(yq -r '.Installation | join(",")' "$f")" = "CRAN" ]; then cranpkg=$(yq -r '.Library[0].Name' "$f"); fi
+  cran_tag=""
+  if [ -n "$cranpkg" ]; then
+    cran_tag=$(curl -s --max-time 30 "https://crandb.r-pkg.org/$cranpkg" | jq -r '.Version // empty' 2>/dev/null || true)
+  fi
+  if [ -n "$cran_tag" ]; then
+    tag="$cran_tag"; link="https://cran.r-project.org/package=$cranpkg"
   elif rel=$(gh api "repos/$repo/releases/latest" 2>/dev/null); then
     tag=$(jq -r .tag_name <<<"$rel")
     link=$(jq -r .html_url <<<"$rel")

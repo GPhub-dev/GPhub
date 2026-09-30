@@ -21,7 +21,10 @@ Version:
   - Name: v2.15.1.0
     URL: https://github.com/brian-lau/MatlabStan/releases/tag/v2.15.1.0
 Installation:
-  - null
+  - CRAN
+  - PyPI
+  - Pkg.jl
+  - conda
 Developer:
   - Tag: default
     Name: Stan Development Team
@@ -62,26 +65,45 @@ Support:
     URL: https://mc-stan.slack.com/join/shared_invite/zt-1le4ebi4m-UMtiOkJb4gcS16qz2wIYCw#/shared-invite/email
 Framework:
   - null
-GPU: false
+GPU: true
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: orange
+        Name: Gaussian Process Classification (GPC)
+      - Tag: red
+        Name: Multi-output Gaussian Process (MOGP)
+    URL: https://mc-stan.org/docs/stan-users-guide/gaussian-processes.html
 Complexity:
-  - null
+  - O(N^3)
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Zero
+      - Tag: default
+        Name: Custom
+    URL: https://mc-stan.org/docs/stan-users-guide/gaussian-processes.html
 LengthScale:
-  - null
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: default
+        Name: Dot Product
+      - Tag: teal
+        Name: Exponential
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+      - Tag: green
+        Name: Periodic
+      - Tag: default
+        Name: Custom
+    URL: https://mc-stan.org/docs/functions-reference/matrix_operations.html#gaussian-process-covariance-functions
 Mixture: false
 MixtureModels:
   - Types:
@@ -90,25 +112,47 @@ MixtureModels:
     URL: null
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+      - Tag: green
+        Name: Poisson
+      - Tag: orange
+        Name: Bernoulli
+      - Tag: default
+        Name: Custom
+    URL: https://mc-stan.org/docs/stan-users-guide/gaussian-processes.html
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: default
+        Name: Markov Chain Monte Carlo (MCMC)
+      - Tag: default
+        Name: Hamiltonian Monte Carlo (HMC)
+      - Tag: default
+        Name: No-U-Turn Sampler (NUTS)
+      - Tag: default
+        Name: Maximum A Posteriori (MAP)
+      - Tag: default
+        Name: Automatic Differentiation Variational Inference (ADVI)
+      - Tag: default
+        Name: Pathfinder
+      - Tag: purple
+        Name: Laplace Approximation (LA)
+    URL: https://mc-stan.org/docs/cmdstan-guide/command_line_options.html
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: yellow
+        Name: L-BFGS
+      - Tag: yellow
+        Name: BFGS
+      - Tag: default
+        Name: Newton
+    URL: https://mc-stan.org/docs/reference-manual/optimization.html
 Resampling: false
 Metrics:
   - null

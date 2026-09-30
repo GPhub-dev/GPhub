@@ -17,7 +17,8 @@ Version:
   - Name: v6.3.2
     URL: https://github.com/pymc-devs/pymc/releases/tag/v6.3.2
 Installation:
-  - null
+  - PyPI
+  - conda
 Developer:
   - Tag: teal
     Name: ArviZ-Devs
@@ -80,54 +81,145 @@ Support:
   - Name: GitHub discussions
     URL: https://github.com/pymc-devs/pymc/discussions
 Framework:
-  - null
-GPU: false
+  - JAX
+  - Numba
+GPU: true
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: default
+        Name: Latent Gaussian Process
+      - Tag: green
+        Name: Sparse Gaussian Process Regression (SGPR)
+      - Tag: default
+        Name: Kronecker Structured Gaussian Process
+      - Tag: default
+        Name: Hilbert Space Gaussian Process (HSGP)
+      - Tag: default
+        Name: Student-T Process (TP)
+      - Tag: orange
+        Name: Gaussian Process Classification (GPC)
+      - Tag: red
+        Name: Multi-output Gaussian Process (MOGP)
+    URL: https://www.pymc.io/projects/docs/en/stable/api/gp.html
 Complexity:
-  - null
+  - O(N^3)
+  - O(NM + M)
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Zero
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: default
+        Name: Custom
+    URL: https://www.pymc.io/projects/examples/en/latest/gaussian_processes/GP-MeansAndCovs.html
 LengthScale:
-  - null
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Mixture: false
+      - Tag: orange
+        Name: Constant
+      - Tag: default
+        Name: White noise
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: red
+        Name: Rational Quadratic
+      - Tag: teal
+        Name: Exponential
+      - Tag: yellow
+        Name: Matern12
+      - Tag: yellow
+        Name: Matern32
+      - Tag: yellow
+        Name: Matern52
+      - Tag: green
+        Name: Linear
+      - Tag: teal
+        Name: Polynomial
+      - Tag: green
+        Name: Cosine
+      - Tag: green
+        Name: Periodic
+      - Tag: default
+        Name: Circular
+      - Tag: default
+        Name: Gibbs
+      - Tag: default
+        Name: Warped Input
+      - Tag: default
+        Name: Scaled Covariance
+      - Tag: default
+        Name: Kronecker
+      - Tag: default
+        Name: Coregion
+      - Tag: default
+        Name: Custom
+    URL: https://www.pymc.io/projects/docs/en/stable/api/gp/cov.html
+Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+      - Tag: teal
+        Name: Scale
+      - Tag: orange
+        Name: Exponentiation
+    URL: https://www.pymc.io/projects/examples/en/latest/gaussian_processes/GP-MeansAndCovs.html
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+      - Tag: teal
+        Name: Student-T
+      - Tag: orange
+        Name: Bernoulli
+      - Tag: default
+        Name: Custom
+    URL: https://www.pymc.io/projects/examples/en/latest/gaussian_processes/GP-Latent.html
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
+      - Tag: blue
+        Name: "default value: 1e-6"
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: default
+        Name: Markov Chain Monte Carlo (MCMC)
+      - Tag: default
+        Name: No-U-Turn Sampler (NUTS)
+      - Tag: default
+        Name: Maximum A Posteriori (MAP)
+      - Tag: default
+        Name: Automatic Differentiation Variational Inference (ADVI)
+      - Tag: teal
+        Name: Variational Free Energy (VFE)
+      - Tag: uiBlue
+        Name: Fully Independent Training Conditional (FITC)
+      - Tag: uiBlue
+        Name: Deterministic Training Conditional (DTC)
+    URL: https://www.pymc.io/projects/examples/en/latest/gaussian_processes/GP-Kron.html
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: yellow
+        Name: L-BFGS-B
+      - Tag: yellow
+        Name: BFGS
+      - Tag: default
+        Name: Powell
+      - Tag: blue
+        Name: SciPy optimizer
+    URL: https://www.pymc.io/projects/docs/en/stable/api/generated/pymc.find_MAP.html
 Resampling: false
 Metrics:
   - null

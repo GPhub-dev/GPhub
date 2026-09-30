@@ -17,7 +17,7 @@ Version:
   - Name: v0.5.3
     URL: https://github.com/GAMES-UChile/mogptk/releases/tag/v0.5.3
 Installation:
-  - null
+  - PyPI
 Developer:
   - Tag: purple
     Name: GAMES Universidad de Chile
@@ -36,54 +36,189 @@ Support:
   - Name: null
     URL: null
 Framework:
-  - null
-GPU: false
+  - PyTorch
+GPU: true
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian Process Regression (GPR)
+      - Tag: red
+        Name: Multi-output Gaussian Process (MOGP)
+      - Tag: default
+        Name: Spectral Mixture (SM)
+      - Tag: default
+        Name: Multi-Output Spectral Mixture (MOSM)
+      - Tag: default
+        Name: Cross Spectral Mixture (CSM)
+      - Tag: default
+        Name: Spectral Mixture Linear Model of Coregionalization (SM-LMC)
+      - Tag: default
+        Name: Convolutional Gaussian (CONV)
+      - Tag: default
+        Name: Multi-Output Harmonizable Spectral Mixture (MOHSM)
+      - Tag: green
+        Name: Sparse Gaussian Process Regression (SGPR)
+      - Tag: green
+        Name: Sparse Variational Gaussian Process (SVGP)
+      - Tag: teal
+        Name: Variational Gaussian Process (VGP)
+      - Tag: default
+        Name: Sparse Pseudo-input GP (Snelson and Ghahramani)
+    URL: https://games-uchile.github.io/mogptk/model.html
 Complexity:
-  - null
+  - O(N^3)
+  - O(N^2)
 Trend:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Linear
+      - Tag: default
+        Name: Multi-Output Mean
+      - Tag: default
+        Name: Custom
+    URL: https://games-uchile.github.io/mogptk/gpr/mean.html
 LengthScale:
-  - null
+  - Isotropic
+  - Anisotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
-Mixture: false
+      - Tag: orange
+        Name: Constant
+      - Tag: green
+        Name: Cosine
+      - Tag: teal
+        Name: Exponential
+      - Tag: default
+        Name: Function
+      - Tag: green
+        Name: Linear
+      - Tag: default
+        Name: Locally Periodic
+      - Tag: yellow
+        Name: Matern
+      - Tag: green
+        Name: Periodic
+      - Tag: teal
+        Name: Polynomial
+      - Tag: red
+        Name: Rational Quadratic
+      - Tag: default
+        Name: Sinc
+      - Tag: default
+        Name: Spectral
+      - Tag: default
+        Name: Spectral Mixture
+      - Tag: blue
+        Name: Squared Exponential
+      - Tag: default
+        Name: White noise
+      - Tag: default
+        Name: Change Points
+      - Tag: default
+        Name: Cross Spectral (CSM)
+      - Tag: default
+        Name: Gaussian Convolution Process (CONV)
+      - Tag: default
+        Name: Independent Multi-output
+      - Tag: default
+        Name: Linear Coregionalization
+      - Tag: default
+        Name: Multi-Output Harmonizable Spectral (MOHSM)
+      - Tag: default
+        Name: Multi-Output Spectral (MOSM)
+      - Tag: default
+        Name: Multi-Output Spectral Mixture
+      - Tag: default
+        Name: Uncoupled Multi-Output Spectral (uMOSM)
+      - Tag: default
+        Name: Custom
+    URL: https://games-uchile.github.io/mogptk/gpr/kernel.html
+Mixture: true
 MixtureModels:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: red
+        Name: Sum
+      - Tag: green
+        Name: Product
+      - Tag: default
+        Name: Mixture
+      - Tag: default
+        Name: Automatic Relevance Determination
+    URL: https://games-uchile.github.io/mogptk/gpr/kernel.html
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: orange
+        Name: Bernoulli
+      - Tag: yellow
+        Name: Beta
+      - Tag: default
+        Name: Chi-Squared
+      - Tag: teal
+        Name: Exponential
+      - Tag: yellow
+        Name: Gamma
+      - Tag: blue
+        Name: Gaussian
+      - Tag: purple
+        Name: Laplace
+      - Tag: default
+        Name: Log Gaussian
+      - Tag: default
+        Name: Log Logistic
+      - Tag: default
+        Name: Multi-Output Likelihood
+      - Tag: green
+        Name: Poisson
+      - Tag: teal
+        Name: Student-T
+      - Tag: teal
+        Name: Weibull
+      - Tag: default
+        Name: Custom
+    URL: https://games-uchile.github.io/mogptk/gpr/likelihood.html
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
+      - Tag: red
+        Name: Fixed Non-Trainable
+      - Tag: blue
+        Name: "default value: 1e-8"
+      - Tag: blue
+        Name: "default value: 1e-6"
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
+      - Tag: default
+        Name: Custom
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Maximum Likelihood Estimation (MLE)
+      - Tag: default
+        Name: Exact inference
+      - Tag: red
+        Name: Evidence Lower Bound (ELBO)
+      - Tag: teal
+        Name: Variational Inference (VI)
+    URL: https://games-uchile.github.io/mogptk/gpr/model.html
 OptimizationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: orange
+        Name: Adam
+      - Tag: yellow
+        Name: L-BFGS
+      - Tag: default
+        Name: Adagrad
+      - Tag: default
+        Name: SGD
+      - Tag: purple
+        Name: PyTorch optimizer
+    URL: https://games-uchile.github.io/mogptk/model.html
 Resampling: false
 Metrics:
-  - null
+  - MAE
+  - MAPE
+  - MSE
+  - RMSE

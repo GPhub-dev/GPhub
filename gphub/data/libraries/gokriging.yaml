@@ -33,9 +33,9 @@ Framework:
 GPU: false
 Models:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: default
+        Name: Ordinary Kriging (OK)
+    URL: https://pkg.go.dev/github.com/lvisei/go-kriging/ordinarykriging
 Complexity:
   - null
 Trend:
@@ -44,12 +44,16 @@ Trend:
         Name: null
     URL: null
 LengthScale:
-  - null
+  - Isotropic
 Correlation:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+      - Tag: teal
+        Name: Exponential
+      - Tag: default
+        Name: Spherical
+    URL: https://pkg.go.dev/github.com/lvisei/go-kriging/ordinarykriging
 Mixture: false
 MixtureModels:
   - Types:
@@ -58,20 +62,20 @@ MixtureModels:
     URL: null
 Likelihood:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: blue
+        Name: Gaussian
+    URL: https://pkg.go.dev/github.com/lvisei/go-kriging
     Nugget:
-      - Tag: null
-        Name: null
+      - Tag: yellow
+        Name: Inferable
     Noise:
-      - Tag: null
-        Name: null
+      - Tag: default
+        Name: Custom
 EstimationMethods:
   - Types:
-      - Tag: null
-        Name: null
-    URL: null
+      - Tag: default
+        Name: Variogram fitting (Bayesian priors)
+    URL: https://pkg.go.dev/github.com/lvisei/go-kriging
 OptimizationMethods:
   - Types:
       - Tag: null
