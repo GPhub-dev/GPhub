@@ -14,8 +14,8 @@ Repository:
   - Name: GPflow/GPflow
     URL: https://github.com/GPflow/GPflow
 Version:
-  - Name: v2.11.1
-    URL: https://github.com/GPflow/GPflow/releases/tag/v2.11.1
+  - Name: v2.11.2
+    URL: https://github.com/GPflow/GPflow/releases/tag/v2.11.2
 Installation:
   - PyPI
 Developer:
