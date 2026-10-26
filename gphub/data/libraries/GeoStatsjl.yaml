@@ -14,8 +14,8 @@ Repository:
   - Name: JuliaEarth/GeoStats.jl
     URL: https://github.com/JuliaEarth/GeoStats.jl
 Version:
-  - Name: v0.90.2
-    URL: https://github.com/JuliaEarth/GeoStats.jl/releases/tag/v0.90.2
+  - Name: v0.91.0
+    URL: https://github.com/JuliaEarth/GeoStats.jl/releases/tag/v0.91.0
 Installation:
   - Pkg.jl
 Developer:
