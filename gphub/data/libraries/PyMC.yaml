@@ -14,8 +14,8 @@ Repository:
   - Name: pymc-devs/pymc
     URL: https://github.com/pymc-devs/pymc
 Version:
-  - Name: v6.3.2
-    URL: https://github.com/pymc-devs/pymc/releases/tag/v6.3.2
+  - Name: v6.4.0
+    URL: https://github.com/pymc-devs/pymc/releases/tag/v6.4.0
 Installation:
   - PyPI
   - conda

@@ -14,8 +14,8 @@ Repository:
   - Name: pyro-ppl/pyro
     URL: https://github.com/pyro-ppl/pyro
 Version:
-  - Name: 1.9.1
-    URL: https://github.com/pyro-ppl/pyro/releases/tag/1.9.1
+  - Name: 1.9.2
+    URL: https://github.com/pyro-ppl/pyro/releases/tag/1.9.2
 Installation:
   - PyPI
   - conda

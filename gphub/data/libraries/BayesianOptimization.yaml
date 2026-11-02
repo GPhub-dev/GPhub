@@ -14,8 +14,8 @@ Repository:
   - Name: bayesian-optimization/BayesianOptimization
     URL: https://github.com/bayesian-optimization/BayesianOptimization
 Version:
-  - Name: v3.3.0
-    URL: https://github.com/bayesian-optimization/BayesianOptimization/releases/tag/v3.3.0
+  - Name: v3.4.0
+    URL: https://github.com/bayesian-optimization/BayesianOptimization/releases/tag/v3.4.0
 Installation:
   - PyPI
   - conda
