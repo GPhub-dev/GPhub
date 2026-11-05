@@ -14,8 +14,8 @@ Repository:
   - Name: secondmind-labs/trieste
     URL: https://github.com/secondmind-labs/trieste
 Version:
-  - Name: v4.6.0
-    URL: https://github.com/secondmind-labs/trieste/releases/tag/v4.6.0
+  - Name: v4.6.1
+    URL: https://github.com/secondmind-labs/trieste/releases/tag/v4.6.1
 Installation:
   - PyPI
 Developer:
