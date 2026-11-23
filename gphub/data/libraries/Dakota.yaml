@@ -15,8 +15,8 @@ Repository:
   - Name: snl-dakota/dakota
     URL: https://github.com/snl-dakota/dakota
 Version:
-  - Name: v6.24.0
-    URL: https://github.com/snl-dakota/dakota/releases/tag/v6.24.0
+  - Name: v7.0.0
+    URL: https://github.com/snl-dakota/dakota/releases/tag/v7.0.0
 Installation:
   - conda
 Developer:
